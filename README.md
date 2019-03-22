@@ -1,2 +1,10 @@
 # sakata-ryuichi.design
-my-vue
+
+Vue.js Nuxt.js
+
+/sakata-ryuichi-web
+で
+npm install
+npm run build
+npm dev
+でローカル起動
