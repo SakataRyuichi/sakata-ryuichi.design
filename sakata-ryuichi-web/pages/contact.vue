@@ -1,9 +1,7 @@
-
-
 <template>
   <section class="container">
+    This is contact
     <globalHeader />
-    this is Top
     <div>
       <logo />
       <h1 class="title">
