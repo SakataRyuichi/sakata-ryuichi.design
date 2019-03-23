@@ -48,13 +48,8 @@ module.exports = {
   */
   modules: [
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/bulma',
-    '@nuxtjs/axios'
+    '@nuxtjs/bulma'
   ],
-
-  axios: {
-    // proxyHeaders: false
-  }
 
   /*
   ** Build configuration
