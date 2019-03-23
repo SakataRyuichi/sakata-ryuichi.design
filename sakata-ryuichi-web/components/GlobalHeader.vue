@@ -26,10 +26,10 @@
             </a>
 
             <div class="navbar-dropdown">
-              <nuxt-link to="/">Top</nuxt-link>
-              <nuxt-link to="/about">about</nuxt-link>
-              <nuxt-link to="/gallery">Gallery</nuxt-link>
-              <nuxt-link to="/contact">Contact</nuxt-link>
+              <nuxt-link to="/" class="navbar-item">Top</nuxt-link>
+              <nuxt-link to="/about" class="navbar-item">about</nuxt-link>
+              <nuxt-link to="/gallery" class="navbar-item">Gallery</nuxt-link>
+              <nuxt-link to="/contact" class="navbar-item">Contact</nuxt-link>
             </div>
           </div>
         </div>
@@ -48,7 +48,11 @@
         </div>
       </div>
     </nav>
-    <HeroComponent />
+    <div class="columns">
+      <div class="column is-full">
+        <HeroComponent />
+      </div>
+    </div>
   </div>
 </template>
 

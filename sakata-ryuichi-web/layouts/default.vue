@@ -1,17 +1,20 @@
 <template>
   <div>
-    <globalHeader />
+    <GlobalHeader />
     <nuxt />
+    <GlobalFooter />
   </div>
 </template>
 
 
 <script>
-import globalHeader from '~/components/GlobalHeader.vue'
+import GlobalHeader from '~/components/GlobalHeader.vue'
+import GlobalFooter from '~/components/GlobalFooter.vue'
 
 export default {
   components: {
-    globalHeader
+    GlobalHeader,
+    GlobalFooter
   }
 }
 </script>
