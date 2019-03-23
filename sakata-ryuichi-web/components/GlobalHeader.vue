@@ -15,13 +15,10 @@
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item">
-            Home
-          </a>
-
-          <a class="navbar-item">
-            Documentation
-          </a>
+          <nuxt-link to="/" class="navbar-item">Top</nuxt-link>
+          <nuxt-link to="/about" class="navbar-item">About</nuxt-link>
+          <nuxt-link to="/gallery" class="navbar-item">Gallery</nuxt-link>
+          <nuxt-link to="/contact" class="navbar-item">Contact</nuxt-link>
 
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">
@@ -29,10 +26,10 @@
             </a>
 
             <div class="navbar-dropdown">
-              <nuxt to="/">Top</nuxt>
-              <nuxt to="/about">about</nuxt>
-              <nuxt to="/gallery">Gallery</nuxt>
-              <nuxt to="/contact">Contact</nuxt>
+              <nuxt-link to="/">Top</nuxt-link>
+              <nuxt-link to="/about">about</nuxt-link>
+              <nuxt-link to="/gallery">Gallery</nuxt-link>
+              <nuxt-link to="/contact">Contact</nuxt-link>
             </div>
           </div>
         </div>
