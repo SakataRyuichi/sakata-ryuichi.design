@@ -28,6 +28,13 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    // //bulma
+    // {
+    //   src: '~assets/main.scss',
+    //   lang: 'scss'
+    // },
+    // //bulma extention
+    // 'bulma-carousel/dist/css/bulma-carousel.min.css',
   ],
 
   /*
