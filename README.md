@@ -1,11 +1,14 @@
 # sakata-ryuichi.design
 
-Vue.js Nuxt.js
+- Vue.js
+- Nuxt.js
+- Bulma
 
 ## ビルド
 `/sakata-ryuichi-web`
 
 で
+
 `npm install`
 
 `npm run build`
