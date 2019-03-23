@@ -1,27 +1,6 @@
 <template>
-  <section class="container">
-    This is about
-    <div>
-      <logo />
-      <h1 class="title">
-        sakata-ryuichi-web
-      </h1>
-      <h2 class="subtitle">
-        My prime Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
-      </div>
-    </div>
+  <section>
+    This is About Page.
   </section>
 </template>
 
@@ -29,6 +8,7 @@
 import Logo from '~/components/Logo.vue'
 
 export default {
+  layout: 'twoColumn',
   components: {
     Logo
   }
