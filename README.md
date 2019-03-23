@@ -2,9 +2,14 @@
 
 Vue.js Nuxt.js
 
-/sakata-ryuichi-web
+## ビルド
+`/sakata-ryuichi-web`
+
 で
-npm install
-npm run build
-npm dev
+`npm install`
+
+`npm run build`
+
+`npm run dev`
+
 でローカル起動
