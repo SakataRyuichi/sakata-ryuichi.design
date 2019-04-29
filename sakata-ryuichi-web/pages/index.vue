@@ -18,7 +18,6 @@ import WelcomeMessage from '~/components/WelcomeMessage.vue'
 
 export default {
   components: {
-    Logo,
     WelcomeMessage
   },
   layout: 'default',
