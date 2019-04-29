@@ -1,0 +1,6 @@
+# binary は -text -diff の省略形
+*.otf binary
+*.eot binary
+*.svg binary
+*.ttf binary
+*.woff binary

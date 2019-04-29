@@ -15,7 +15,8 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script: [{ src: "https://unpkg.com/ionicons/dist/ionicons.js", body: true }]
   },
 
   /*
@@ -27,6 +28,8 @@ export default {
   ** Global CSS
   */
   css: [
+    // node.js module but we specify the pre-processor
+    { src: '~assets/main.scss', lang: 'scss' },
   ],
 
   /*
