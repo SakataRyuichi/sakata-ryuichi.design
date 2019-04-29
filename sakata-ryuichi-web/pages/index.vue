@@ -14,7 +14,6 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 import WelcomeMessage from '~/components/WelcomeMessage.vue'
 
 export default {
