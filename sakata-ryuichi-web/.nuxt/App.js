@@ -8,7 +8,7 @@ import _6f6c098b from '../layouts/default.vue'
 const layouts = { "_default": _6f6c098b }
 
 export default {
-  head: {"title":"sakata-ryuichi-web","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"My sublime Nuxt.js project"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"script":[{"src":"https:\u002F\u002Funpkg.com\u002Fionicons\u002Fdist\u002Fionicons.js","body":true}],"style":[]},
+  head: {"title":"sakata-ryuichi-web","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"My sublime Nuxt.js project"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","size":"32x32","href":"favicon.ico"}],"script":[{"src":"https:\u002F\u002Funpkg.com\u002Fionicons\u002Fdist\u002Fionicons.js","body":true}],"style":[]},
 
   render(h, props) {
     const loadingEl = h('NuxtLoading', { ref: 'loading' })
