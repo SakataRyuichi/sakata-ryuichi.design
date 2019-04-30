@@ -5,15 +5,12 @@
     :disabled="isDisabled" 
     :href="hrefUrl" 
     :target="isBlank? '_blank':false"
-    v-on:mouseenter="mouseenter"
-    v-on:mouseleave="mouseleave
-    ">
+    v-on:click="linkDisabled"
+    >
       <span v-if="iconStats" class="icon is-medium">
         <ion-icon :name="iconName"></ion-icon>
       </span>
-      <transition name="fadeLabel">
-        <span v-show="active">{{ labelName }}</span>
-      </transition>
+      <span>{{ labelName }}</span>
     </a>
   </div>
 </template>
@@ -26,39 +23,14 @@
 .icon.is-medium {
   font-size: 1.2rem;
 }
-
-//transition animation
-.fadeLabel-enter-active, .fadeLabel-leave-active {
-  transition: opacity .2s;
-}
-.fadeLabel-enter, .fadeLabel-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
 </style>
 
 <script>
 export default {
   data: function(){
     return {
-    selectedItem: '',
-    active: false
+    selectedItem: ''
     }
-  },
-  methods: {
-    mouseenter: function(){
-      this.useHoverAction
-      return this.active = !this.active
-    },
-    mouseleave: function(){
-      this.useHoverAction
-      return this.active = !this.active
-    },
-    useHoverAction: function() {
-      if(noHover === true) {
-        return
-      }
-    }
-
   },
   props: {
     iconName: {
@@ -89,9 +61,16 @@ export default {
       type: Boolean,
       default: false
     },
-    noHover: {
+    disabled: {
       type: Boolean,
       default: false
+    }
+  },
+  methods: {
+    linkDisabled: function(event) {
+      if(this.disabled === true) {
+        event.preventDefault()
+      }
     }
   },
   computed: {
