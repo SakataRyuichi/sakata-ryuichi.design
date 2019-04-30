@@ -7,8 +7,6 @@
       <nuxt />
     </div>
     <Snslinks />
-    asdfsdfsafdsa<br>
-    asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>
   </div>
 </template>
 
