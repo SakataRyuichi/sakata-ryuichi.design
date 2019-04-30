@@ -7,6 +7,8 @@
       <nuxt />
     </div>
     <Snslinks />
+    asdfsdfsafdsa<br>
+    asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>asdfsdfsafdsa<br>
   </div>
 </template>
 
@@ -31,7 +33,7 @@ export default {
   background-image: url('/bg.png');
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 100% auto;
+  background-size: auto 60%;
 }
 
 @media ( max-width : 769px ) {

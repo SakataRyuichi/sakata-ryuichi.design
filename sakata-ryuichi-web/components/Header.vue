@@ -1,5 +1,6 @@
 <template>
-  <header class="level">
+
+  <header class="level is-fixed-top">
     <div class="level-left">
       <div class="level-item">
         <a href="/">
@@ -23,6 +24,7 @@
       </div>
     </div>
   </header>
+
 </template>
 
 <script>
