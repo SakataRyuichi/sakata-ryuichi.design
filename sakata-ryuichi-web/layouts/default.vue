@@ -31,7 +31,7 @@ export default {
   background-image: url('/bg.png');
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: auto 60%;
+  background-size: 100% auto;
 }
 
 @media ( max-width : 769px ) {
