@@ -1,0 +1,427 @@
+@charset "UTF-8";
+/*
+ node_modules
+ */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v4.0 | 20180602
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block; }
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-size: 62.5%;
+  font-family: "メイリオ","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
+
+.pt-limitter {
+  position: relative;
+  margin: 0 auto;
+  min-width: 1020px;
+  max-width: 1280px; }
+
+body {
+  background-color: #F7F7F7; }
+
+a {
+  color: #0066C0;
+  text-decoration: none; }
+  a:hover {
+    color: #003d74; }
+
+.pt-red {
+  color: #E60000; }
+
+.otoku-button {
+  width: 350px;
+  color: #241613;
+  background: linear-gradient(88deg, #E8DB1A, #F7AF2A);
+  border: 2px solid;
+  text-align: center;
+  font-size: 18px;
+  line-height: 2.6;
+  -webkit-box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.35);
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s; }
+  .otoku-button a {
+    color: #241613;
+    display: block; }
+  .otoku-button:hover {
+    background: linear-gradient(88deg, #e1d417, #f6a816); }
+
+.otoku-button-flow {
+  margin: 0 auto;
+  color: #0066C0;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 6px;
+  line-height: 2;
+  margin-bottom: 12px;
+  width: 220px; }
+  .otoku-button-flow:hover {
+    color: #003d74; }
+  .otoku-button-flow a {
+    display: block; }
+
+.otoku-hero {
+  width: 1000px;
+  margin: 0 auto; }
+  .otoku-hero img {
+    display: block;
+    width: 100%;
+    height: auto; }
+
+.otoku-news {
+  width: 800px;
+  background: #fff;
+  border-radius: 12px;
+  margin: 0 auto 40px;
+  padding: 12px; }
+  .otoku-news__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px; }
+
+.otoku-news-list {
+  font-size: 14px; }
+  .otoku-news-list__item {
+    margin-bottom: 6px; }
+
+.otoku-title {
+  padding: 4px 4px 8px 4px;
+  border-radius: 12px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  background: #BBBCBE;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s; }
+  .otoku-title--left {
+    text-align: left; }
+  .otoku-title__inner {
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: #fff; }
+  .otoku-title__badge {
+    margin-bottom: 8px; }
+  .otoku-title__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px; }
+    .otoku-title__title:last-child {
+      margin-bottom: 0; }
+  .otoku-title__sub {
+    background: #F7F7F7;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 4px; }
+  .otoku-title__icon {
+    width: 15px;
+    height: auto;
+    margin: 12px auto 0; }
+
+.otoku-menu-button {
+  padding: 4px 4px 8px 4px;
+  border-radius: 12px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  background: #BBBCBE;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s; }
+  .otoku-menu-button--active {
+    background: linear-gradient(88deg, #E8DB1A, #F7AF2A); }
+  .otoku-menu-button:hover {
+    background: linear-gradient(88deg, #E8DB1A, #F7AF2A); }
+  .otoku-menu-button a {
+    display: block;
+    color: #241613;
+    padding: 16px 20px; }
+  .otoku-menu-button__inner {
+    border-radius: 8px;
+    background: #fff; }
+  .otoku-menu-button__badge {
+    margin-bottom: 8px; }
+  .otoku-menu-button__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px; }
+  .otoku-menu-button__sub {
+    background: #F7F7F7;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 4px; }
+  .otoku-menu-button__icon {
+    width: 15px;
+    height: auto;
+    margin: 12px auto 0; }
+
+.otoku-badge {
+  display: inline-block;
+  margin-right: 4px;
+  padding: 4px 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  border-radius: 4px;
+  background: #E60000;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  vertical-align: middle; }
+
+.otoku-rabel {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  border-radius: 14px;
+  background: linear-gradient(88deg, #E8DB1A, #F7AF2A);
+  text-align: center;
+  color: #fff;
+  font-weight: bold; }
+  .otoku-rabel--silver {
+    background: #BBBCBE; }
+  .otoku-rabel--bronze {
+    background: #C69C6D; }
+  .otoku-rabel--horizon {
+    vertical-align: middle;
+    margin-right: 8px; }
+  .otoku-rabel__icon {
+    display: inline-block;
+    width: 17px;
+    height: auto;
+    margin-right: 4px; }
+
+.otoku-content {
+  background: #fff;
+  margin-bottom: 40px;
+  padding: 20px 0; }
+  .otoku-content__title {
+    margin-bottom: 20px; }
+    .otoku-content__title img {
+      display: block;
+      width: 50%;
+      height: auto;
+      margin: 0 auto; }
+
+.otoku-course {
+  overflow: hidden; }
+  .otoku-course__content {
+    background: #F7F7F7;
+    display: block;
+    float: left;
+    width: 48%;
+    margin: 0 1%;
+    padding: 12px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  .otoku-course__footer {
+    padding: 20px 0;
+    background: #fff; }
+  .otoku-course__text {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 12px; }
+  .otoku-course__point {
+    font-weight: bold;
+    background-color: #F7F7F7;
+    font-size: 16px;
+    text-align: center;
+    line-height: 2;
+    margin: 0 20px;
+    margin-bottom: 12px; }
+
+.otoku-hikaku-main {
+  background: #F7F7F7;
+  padding: 20px;
+  margin-bottom: 60px; }
+  .otoku-hikaku-main__title {
+    margin-bottom: 12px; }
+
+.otoku-hikaku-menu {
+  overflow: hidden;
+  background: #F7F7F7;
+  padding: 16px 0;
+  margin: 0 auto 20px; }
+  .otoku-hikaku-menu__item {
+    width: 32%;
+    float: left;
+    margin: 0 0.5%; }
+
+.otoku-table {
+  margin-bottom: 40px; }
+  .otoku-table__head {
+    overflow: hidden;
+    padding: 0 120px;
+    margin: 0 auto 12px; }
+    .otoku-table__head--negative {
+      margin-bottom: -24px; }
+    .otoku-table__head--negative-top {
+      margin-top: -24px; }
+  .otoku-table__head-cell {
+    float: right;
+    width: 33.333%; }
+  .otoku-table__title {
+    font-size: 20px;
+    margin-left: -40px;
+    font-weight: bold; }
+  .otoku-table__shop-name {
+    width: 33.333%;
+    position: relative;
+    background: #fff;
+    height: 60px;
+    line-height: 60px;
+    width: 250px;
+    margin: 0 auto 12px;
+    text-align: center;
+    font-weight: bold;
+    color: #241613;
+    font-size: 20px; }
+    .otoku-table__shop-name::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      right: 0;
+      width: 20px;
+      height: 20px;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      background: #fff;
+      margin: 0 auto; }
+    .otoku-table__shop-name--under {
+      margin: 12px auto 0; }
+      .otoku-table__shop-name--under::after {
+        top: -8px;
+        bottom: auto; }
+    .otoku-table__shop-name--current {
+      background: #DD064A;
+      color: #fff; }
+      .otoku-table__shop-name--current::after {
+        background: #DD064A; }
+  .otoku-table__month {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    width: 33.333%; }
+  .otoku-table__content {
+    margin: 0 120px 40px; }
+  .otoku-table__column {
+    overflow: hidden;
+    border-bottom: 1px solid #BBBCBE;
+    border-right: 1px solid #BBBCBE;
+    background: #fff; }
+    .otoku-table__column:first-child {
+      border-top: 1px solid #BBBCBE; }
+    .otoku-table__column--result {
+      margin-top: 12px;
+      border: 2px solid #BBBCBE; }
+  .otoku-table__cell {
+    display: block;
+    width: 33.333%;
+    float: left;
+    background: #fff;
+    border-right: 1px solid #BBBCBE;
+    font-size: 14px;
+    text-align: right;
+    line-height: 1.4;
+    font-weight: bold;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 9px 12px; }
+    .otoku-table__cell:first-child {
+      text-align: left;
+      border-left: 1px solid #BBBCBE; }
+    .otoku-table__cell:last-child {
+      border-right: none; }
+    .otoku-table__cell--current {
+      background: #D6F8FF; }
+    .otoku-table__cell--strong {
+      color: #DD064A; }
+    .otoku-table__cell--big {
+      font-size: 20px; }
+    .otoku-table__cell--small {
+      color: #BBBCBE;
+      font-size: 12px; }
+
+.otoku-hikaku-entry {
+  margin: 0 120px 20px;
+  background: #fff;
+  border: 2px solid #BBBCBE;
+  padding: 12px; }
+  .otoku-hikaku-entry__inner {
+    overflow: hidden; }
+  .otoku-hikaku-entry__name {
+    display: inline-block;
+    background: #F7F7F7;
+    padding: 12px;
+    text-align: center;
+    width: 280px;
+    margin: 0 20px 0;
+    vertical-align: middle; }
+  .otoku-hikaku-entry__rabel {
+    margin: 8px 0;
+    font-weight: bold;
+    font-size: 14px; }
+  .otoku-hikaku-entry__text {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.4;
+    vertical-align: middle; }
+  .otoku-hikaku-entry__bnr {
+    width: 260px;
+    float: left;
+    margin: 0 12px 0 0; }
+  .otoku-hikaku-entry__pointtown {
+    float: right;
+    width: 600px; }

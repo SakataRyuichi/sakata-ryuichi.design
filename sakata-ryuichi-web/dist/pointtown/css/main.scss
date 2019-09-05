@@ -1,0 +1,79 @@
+@import 'node_modules/reset-css/sass/reset';
+
+
+$bodyBg: #F4F5F9;
+$blue: #256DF9;
+$red: #FA4343;
+$yellow: #F9CA25;
+$green: #30B900;
+$biztexBlue: #1A3068;
+
+$black: #222;
+$glay: #D7D7D7;
+
+$borderGlay: #D7D7D7;
+
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+html {
+    font-size: 62.5%;
+} 
+body {
+    font-size: 1.6rem;
+    background-color: $bodyBg;
+}
+
+
+
+.header {
+    background: #fff;
+    height: 60px;
+    margin-bottom: 20px;
+
+    &__content {
+        width: 1080px;
+
+    }
+
+    &__item {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;           
+        &--left {
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: start;
+        }
+
+        &--right {
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            justify-content: end;
+        }
+    }
+}
+
+.buttons {
+
+}
+
+.button {
+
+}
+
+.main {
+    &__content {
+        font-size: 40px;
+    }
+}
