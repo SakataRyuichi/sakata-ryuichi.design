@@ -62,6 +62,10 @@ html {
   margin: 0 auto;
   min-width: 1020px;
   max-width: 1280px; }
+  @media screen and (max-width: 720px) {
+    .pt-limitter {
+      min-width: 300px;
+      max-width: 800px; } }
 
 body {
   background-color: #F7F7F7; }
@@ -96,6 +100,10 @@ a {
     display: block; }
   .otoku-button:hover {
     background: linear-gradient(88deg, #e1d417, #f6a816); }
+  @media screen and (max-width: 720px) {
+    .otoku-button {
+      width: 240px;
+      font-size: 18px; } }
 
 .otoku-button-flow {
   margin: 0 auto;
@@ -119,6 +127,9 @@ a {
     display: block;
     width: 100%;
     height: auto; }
+  @media screen and (max-width: 720px) {
+    .otoku-hero {
+      width: 100%; } }
 
 .otoku-news {
   width: 800px;
@@ -130,6 +141,15 @@ a {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 12px; }
+    @media screen and (max-width: 720px) {
+      .otoku-news__title {
+        font-size: 14px; } }
+  @media screen and (max-width: 720px) {
+    .otoku-news {
+      width: auto;
+      margin: 0 12px 20px; }
+      .otoku-news .otoku-badge {
+        margin-bottom: 4px; } }
 
 .otoku-news-list {
   font-size: 14px; }
@@ -153,21 +173,36 @@ a {
     background: #fff; }
   .otoku-title__badge {
     margin-bottom: 8px; }
+    @media screen and (max-width: 720px) {
+      .otoku-title__badge {
+        margin-bottom: 4px; } }
   .otoku-title__title {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 12px; }
     .otoku-title__title:last-child {
       margin-bottom: 0; }
+    @media screen and (max-width: 720px) {
+      .otoku-title__title {
+        font-size: 16px; } }
+    @media screen and (max-width: 720px) {
+      .otoku-title__title .otoku-rabel {
+        margin-bottom: 4px; } }
   .otoku-title__sub {
     background: #F7F7F7;
     font-size: 16px;
     font-weight: bold;
     padding: 4px; }
+    @media screen and (max-width: 720px) {
+      .otoku-title__sub {
+        font-size: 14px; } }
   .otoku-title__icon {
     width: 15px;
     height: auto;
     margin: 12px auto 0; }
+  @media screen and (max-width: 720px) {
+    .otoku-title__rable {
+      display: block; } }
 
 .otoku-menu-button {
   padding: 4px 4px 8px 4px;
@@ -177,7 +212,11 @@ a {
   text-align: center;
   background: #BBBCBE;
   -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s; }
+  transition: background-color 0.3s;
+  position: relative; }
+  @media screen and (max-width: 720px) {
+    .otoku-menu-button {
+      text-align: left; } }
   .otoku-menu-button--active {
     background: linear-gradient(88deg, #E8DB1A, #F7AF2A); }
   .otoku-menu-button:hover {
@@ -186,6 +225,9 @@ a {
     display: block;
     color: #241613;
     padding: 16px 20px; }
+    @media screen and (max-width: 720px) {
+      .otoku-menu-button a {
+        padding: 8px 12px; } }
   .otoku-menu-button__inner {
     border-radius: 8px;
     background: #fff; }
@@ -195,15 +237,40 @@ a {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 12px; }
+    @media screen and (max-width: 720px) {
+      .otoku-menu-button__title {
+        margin-bottom: 8px;
+        font-size: 16px; } }
   .otoku-menu-button__sub {
     background: #F7F7F7;
     font-size: 16px;
     font-weight: bold;
     padding: 4px; }
+    @media screen and (max-width: 720px) {
+      .otoku-menu-button__sub {
+        font-size: 13px;
+        background: none;
+        color: #BBBCBE; } }
   .otoku-menu-button__icon {
     width: 15px;
     height: auto;
     margin: 12px auto 0; }
+    @media screen and (max-width: 720px) {
+      .otoku-menu-button__icon {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 12px;
+        width: 13px;
+        margin: auto; }
+        .otoku-menu-button__icon .otoku-arrow-bottom {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 8px;
+          margin: auto;
+          width: 13px;
+          height: 12px; } }
 
 .otoku-badge {
   display: inline-block;
@@ -217,6 +284,10 @@ a {
   color: #fff;
   font-weight: bold;
   vertical-align: middle; }
+  @media screen and (max-width: 720px) {
+    .otoku-badge {
+      font-size: 12px;
+      padding: 3px 6px; } }
 
 .otoku-rabel {
   display: inline-block;
@@ -228,6 +299,11 @@ a {
   text-align: center;
   color: #fff;
   font-weight: bold; }
+  @media screen and (max-width: 720px) {
+    .otoku-rabel {
+      font-size: 12px;
+      line-height: 1.2;
+      padding: 3px 8px; } }
   .otoku-rabel--silver {
     background: #BBBCBE; }
   .otoku-rabel--bronze {
@@ -245,6 +321,10 @@ a {
   background: #fff;
   margin-bottom: 40px;
   padding: 20px 0; }
+  @media screen and (max-width: 720px) {
+    .otoku-content {
+      margin-bottom: 30px;
+      padding: 12px 0; } }
   .otoku-content__title {
     margin-bottom: 20px; }
     .otoku-content__title img {
@@ -252,6 +332,9 @@ a {
       width: 50%;
       height: auto;
       margin: 0 auto; }
+      @media screen and (max-width: 720px) {
+        .otoku-content__title img {
+          width: 100%; } }
 
 .otoku-course {
   overflow: hidden; }
@@ -264,13 +347,26 @@ a {
     padding: 12px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
+    @media screen and (max-width: 720px) {
+      .otoku-course__content {
+        width: 100%;
+        float: auto;
+        margin-bottom: 20px; } }
   .otoku-course__footer {
     padding: 20px 0;
     background: #fff; }
+    @media screen and (max-width: 720px) {
+      .otoku-course__footer {
+        padding-left: 8px;
+        padding-right: 8px; } }
   .otoku-course__text {
     font-size: 14px;
     text-align: center;
     margin-bottom: 12px; }
+    @media screen and (max-width: 720px) {
+      .otoku-course__text {
+        text-align: left;
+        line-height: 1.4; } }
   .otoku-course__point {
     font-weight: bold;
     background-color: #F7F7F7;
@@ -279,11 +375,21 @@ a {
     line-height: 2;
     margin: 0 20px;
     margin-bottom: 12px; }
+    @media screen and (max-width: 720px) {
+      .otoku-course__point {
+        width: auto;
+        margin: 0;
+        margin-bottom: 8px;
+        padding: 4px 8px; } }
 
 .otoku-hikaku-main {
   background: #F7F7F7;
   padding: 20px;
   margin-bottom: 60px; }
+  @media screen and (max-width: 720px) {
+    .otoku-hikaku-main {
+      padding: 12px 8px;
+      margin-bottom: 40px; } }
   .otoku-hikaku-main__title {
     margin-bottom: 12px; }
 
@@ -292,17 +398,39 @@ a {
   background: #F7F7F7;
   padding: 16px 0;
   margin: 0 auto 20px; }
+  @media screen and (max-width: 720px) {
+    .otoku-hikaku-menu {
+      padding: 8px 0;
+      margin-left: 8px;
+      margin-right: 8px; } }
   .otoku-hikaku-menu__item {
     width: 32%;
     float: left;
     margin: 0 0.5%; }
+    @media screen and (max-width: 720px) {
+      .otoku-hikaku-menu__item {
+        width: 100%;
+        float: auto;
+        margin: 0 0 8px; } }
 
 .otoku-table {
   margin-bottom: 40px; }
+  @media screen and (max-width: 720px) {
+    .otoku-table {
+      width: 100%; } }
+  @media screen and (max-width: 720px) {
+    .otoku-table__wrap {
+      overflow: scroll; } }
+  @media screen and (max-width: 720px) {
+    .otoku-table__inner {
+      width: 600px; } }
   .otoku-table__head {
     overflow: hidden;
     padding: 0 120px;
     margin: 0 auto 12px; }
+    @media screen and (max-width: 720px) {
+      .otoku-table__head {
+        padding: 0 20px; } }
     .otoku-table__head--negative {
       margin-bottom: -24px; }
     .otoku-table__head--negative-top {
@@ -314,6 +442,10 @@ a {
     font-size: 20px;
     margin-left: -40px;
     font-weight: bold; }
+    @media screen and (max-width: 720px) {
+      .otoku-table__title {
+        font-size: 16px;
+        margin-left: auto; } }
   .otoku-table__shop-name {
     width: 33.333%;
     position: relative;
@@ -326,6 +458,12 @@ a {
     font-weight: bold;
     color: #241613;
     font-size: 20px; }
+    @media screen and (max-width: 720px) {
+      .otoku-table__shop-name {
+        font-size: 14px;
+        width: 180px;
+        height: 40px;
+        line-height: 40px; } }
     .otoku-table__shop-name::after {
       content: "";
       display: block;
@@ -356,6 +494,9 @@ a {
     width: 33.333%; }
   .otoku-table__content {
     margin: 0 120px 40px; }
+    @media screen and (max-width: 720px) {
+      .otoku-table__content {
+        margin: 0 20px 40px; } }
   .otoku-table__column {
     overflow: hidden;
     border-bottom: 1px solid #BBBCBE;
@@ -379,6 +520,10 @@ a {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 9px 12px; }
+    @media screen and (max-width: 720px) {
+      .otoku-table__cell {
+        font-size: 13px;
+        padding: 6px 8px; } }
     .otoku-table__cell:first-child {
       text-align: left;
       border-left: 1px solid #BBBCBE; }
@@ -390,6 +535,9 @@ a {
       color: #DD064A; }
     .otoku-table__cell--big {
       font-size: 20px; }
+      @media screen and (max-width: 720px) {
+        .otoku-table__cell--big {
+          font-size: 16px; } }
     .otoku-table__cell--small {
       color: #BBBCBE;
       font-size: 12px; }
@@ -399,6 +547,10 @@ a {
   background: #fff;
   border: 2px solid #BBBCBE;
   padding: 12px; }
+  @media screen and (max-width: 720px) {
+    .otoku-hikaku-entry {
+      margin: 0 8px 20px;
+      padding: 8px; } }
   .otoku-hikaku-entry__inner {
     overflow: hidden; }
   .otoku-hikaku-entry__name {
@@ -409,19 +561,37 @@ a {
     width: 280px;
     margin: 0 20px 0;
     vertical-align: middle; }
+    @media screen and (max-width: 720px) {
+      .otoku-hikaku-entry__name {
+        display: block;
+        width: auto;
+        margin-bottom: 8px; } }
   .otoku-hikaku-entry__rabel {
     margin: 8px 0;
     font-weight: bold;
     font-size: 14px; }
+    @media screen and (max-width: 720px) {
+      .otoku-hikaku-entry__rabel {
+        font-size: 16px; } }
   .otoku-hikaku-entry__text {
     display: inline-block;
     font-size: 18px;
     line-height: 1.4;
     vertical-align: middle; }
+    @media screen and (max-width: 720px) {
+      .otoku-hikaku-entry__text {
+        font-size: 14px; } }
   .otoku-hikaku-entry__bnr {
     width: 260px;
     float: left;
     margin: 0 12px 0 0; }
+    @media screen and (max-width: 720px) {
+      .otoku-hikaku-entry__bnr {
+        float: none; } }
   .otoku-hikaku-entry__pointtown {
     float: right;
     width: 600px; }
+    @media screen and (max-width: 720px) {
+      .otoku-hikaku-entry__pointtown {
+        float: none;
+        width: auto; } }
