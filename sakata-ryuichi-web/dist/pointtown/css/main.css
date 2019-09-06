@@ -338,6 +338,10 @@ a {
 
 .otoku-course {
   overflow: hidden; }
+  .otoku-course__main img {
+    display: block;
+    width: 100%;
+    height: auto; }
   .otoku-course__content {
     background: #F7F7F7;
     display: block;
