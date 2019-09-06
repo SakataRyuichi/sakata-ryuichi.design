@@ -342,6 +342,8 @@ a {
     display: block;
     width: 100%;
     height: auto; }
+  .otoku-course__title {
+    margin-bottom: 16px; }
   .otoku-course__content {
     background: #F7F7F7;
     display: block;
