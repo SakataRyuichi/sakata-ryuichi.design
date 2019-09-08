@@ -79,6 +79,9 @@ a {
 .pt-red {
   color: #E60000; }
 
+.otoku-weight-bold {
+  font-weight: bold; }
+
 .otoku-button {
   width: 350px;
   color: #241613;
@@ -119,6 +122,9 @@ a {
     color: #003d74; }
   .otoku-button-flow a {
     display: block; }
+
+.otoku-main {
+  background: #F7F7F7; }
 
 .otoku-hero {
   width: 1000px;
@@ -179,12 +185,13 @@ a {
   .otoku-title__title {
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 12px; }
+    margin-bottom: 12px;
+    line-height: 1.4; }
     .otoku-title__title:last-child {
       margin-bottom: 0; }
     @media screen and (max-width: 720px) {
       .otoku-title__title {
-        font-size: 16px; } }
+        font-size: 18px; } }
     @media screen and (max-width: 720px) {
       .otoku-title__title .otoku-rabel {
         margin-bottom: 4px; } }
@@ -366,7 +373,7 @@ a {
         padding-left: 8px;
         padding-right: 8px; } }
   .otoku-course__text {
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     margin-bottom: 12px; }
     @media screen and (max-width: 720px) {
@@ -380,7 +387,8 @@ a {
     text-align: center;
     line-height: 2;
     margin: 0 20px;
-    margin-bottom: 12px; }
+    margin-bottom: 12px;
+    padding: 0 8px; }
     @media screen and (max-width: 720px) {
       .otoku-course__point {
         width: auto;
@@ -559,6 +567,18 @@ a {
       padding: 8px; } }
   .otoku-hikaku-entry__inner {
     overflow: hidden; }
+  .otoku-hikaku-entry__left {
+    width: 50%;
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px 0; }
+  .otoku-hikaku-entry__right {
+    width: 50%;
+    float: right;
+    padding: 8px 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
   .otoku-hikaku-entry__name {
     display: inline-block;
     background: #F7F7F7;
@@ -581,7 +601,7 @@ a {
         font-size: 16px; } }
   .otoku-hikaku-entry__text {
     display: inline-block;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.4;
     vertical-align: middle; }
     @media screen and (max-width: 720px) {
@@ -595,8 +615,7 @@ a {
       .otoku-hikaku-entry__bnr {
         float: none; } }
   .otoku-hikaku-entry__pointtown {
-    float: right;
-    width: 600px; }
+    overflow: hidden; }
     @media screen and (max-width: 720px) {
       .otoku-hikaku-entry__pointtown {
         float: none;
