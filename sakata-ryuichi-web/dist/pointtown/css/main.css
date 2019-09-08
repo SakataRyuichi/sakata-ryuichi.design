@@ -573,12 +573,22 @@ a {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 20px 0; }
+    @media screen and (max-width: 720px) {
+      .otoku-hikaku-entry__left {
+        float: none;
+        width: auto;
+        padding: 0; } }
   .otoku-hikaku-entry__right {
     width: 50%;
     float: right;
     padding: 8px 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
+    @media screen and (max-width: 720px) {
+      .otoku-hikaku-entry__right {
+        float: none;
+        width: auto;
+        padding: 0; } }
   .otoku-hikaku-entry__name {
     display: inline-block;
     background: #F7F7F7;
