@@ -66,7 +66,7 @@ html {
 body {
   font-size: 1.6rem;
   background: #F9F9F9;
-  color: #222; }
+  color: #121212; }
 
 /*
  layout
@@ -96,15 +96,15 @@ a {
     -webkit-transition: top 0.3s;
     transition: top 0.3s; }
     .mi-header--fixed .mi-gnav__item {
-      color: #222; }
+      color: #121212; }
     .mi-header--fixed .mi-login-button {
-      color: #222; }
+      color: #121212; }
     .mi-header--fixed .mi-signin .svg-key {
-      fill: #222; }
+      fill: #121212; }
     .mi-header--fixed .mi-header__inner {
       padding: 12px 40px; }
     .mi-header--fixed .mi-gnav__item:hover {
-      color: #222; }
+      color: #121212; }
     .mi-header--fixed .mi-gnav__item--current {
       background: #091793;
       color: #fff; }
@@ -194,8 +194,8 @@ a {
     fill: #fff; }
   .mi-signin__item {
     position: relative;
-    margin-right: 20px;
-    padding-right: 20px;
+    margin-right: 12px;
+    padding-right: 12px;
     vertical-align: middle; }
     .mi-signin__item::after {
       content: "";
@@ -273,6 +273,21 @@ a {
   margin-bottom: 100px; }
   .mi-main__section:first-child {
     padding-top: 0px; }
+  .mi-main__section--bg01 {
+    background: url(../img/bg-svg.svg);
+    background-position: right -230px top 130px;
+    background-size: 700px 600px;
+    background-repeat: no-repeat; }
+  .mi-main__section--bg02 {
+    background: url(../img/bg-svg02.svg);
+    background-position: left -310px top 340px;
+    background-size: 870px 800px;
+    background-repeat: no-repeat; }
+  .mi-main__section--bg03 {
+    background: url(../img/bg-svg03.svg);
+    background-position: right -220px top 0px;
+    background-size: 800px 1200px;
+    background-repeat: no-repeat; }
 
 .mi-main__content {
   margin-bottom: 80px; }
@@ -288,6 +303,17 @@ a {
     background-position: left top;
     background-size: 100% auto;
     padding-top: 140px; }
+    .mi-hero__inner::before {
+      content: "";
+      width: 140px;
+      height: 140px;
+      position: absolute;
+      left: 120px;
+      top: 300px;
+      display: block;
+      background-image: url(../img/svg-search.svg);
+      background-repeat: no-repeat;
+      background-size: 100% auto; }
   .mi-hero__title {
     display: block;
     width: 500px;
@@ -353,14 +379,17 @@ a {
   margin-bottom: 60px; }
 
 .mi-section-title {
-  text-align: center; }
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto; }
   .mi-section-title__lead {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 20px; }
   .mi-section-title__rabel {
     margin-bottom: 20px;
     font-size: 3.8rem;
-    font-weight: 600; }
+    font-weight: 600;
+    line-height: 1.6; }
     .mi-section-title__rabel--blue {
       color: #44B0FF; }
     .mi-section-title__rabel--pink {
@@ -390,11 +419,11 @@ a {
       margin-right: 0; }
 
 .mi-card {
-  min-width: 300px;
+  min-width: 400px;
   position: relative;
   background: #fff;
   border-radius: 6px;
-  padding: 30px 12px 20px;
+  padding: 30px 20px 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
   .mi-card__badge {
@@ -411,21 +440,22 @@ a {
     .mi-card__badge--pink {
       background: #CD0D5E; }
   .mi-card__img {
-    margin-bottom: 20px; }
+    margin-bottom: 30px; }
     .mi-card__img img {
       display: block;
       height: 150px;
       width: auto;
       margin: 0 auto; }
   .mi-card__title {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-weight: 600; }
   .mi-card__text {
     font-size: 1.4rem;
     color: #4E4E4E;
-    text-align: center; }
+    text-align: left;
+    line-height: 1.6; }
 
 .mi-panel-vertical .mi-panel {
   margin-bottom: 80px; }
@@ -438,7 +468,7 @@ a {
   -ms-flex-pack: center;
   justify-content: center; }
   .mi-panel__img {
-    width: 560px;
+    width: 660px;
     margin: 60px 30px 0;
     -webkit-box-shadow: 0px 12px 90px rgba(27, 53, 120, 0.12), 0px 9px 46px rgba(27, 37, 120, 0.15);
     box-shadow: 0px 12px 90px rgba(27, 53, 120, 0.12), 0px 9px 46px rgba(27, 37, 120, 0.15);
@@ -448,7 +478,7 @@ a {
       width: 100%;
       height: auto; }
   .mi-panel__content {
-    width: 560px;
+    width: 460px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0 30px 0; }
