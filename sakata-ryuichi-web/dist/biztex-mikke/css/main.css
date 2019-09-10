@@ -152,6 +152,8 @@ a {
       bottom: 0; }
       .mi-header--open .mi-menu .menu-svg {
         fill: #121212; }
+      .mi-header--open .mi-menu .menu-close-svg {
+        fill: #121212; }
       .mi-header--open .mi-header__center {
         display: block !important; }
       .mi-header--open .mi-gnav__item {
@@ -315,6 +317,9 @@ a {
     height: auto; }
   .mi-menu .menu-svg {
     fill: #fff; }
+  .mi-menu .menu-close-svg {
+    fill: #fff;
+    display: none; }
 
 .mi-trial-button {
   display: inline-block;
