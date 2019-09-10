@@ -95,7 +95,7 @@ a {
     background: #F9F9F9;
     -webkit-transition: top 0.3s;
     transition: top 0.3s; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-header--fixed {
         background: none; } }
     .mi-header--fixed .mi-gnav__item {
@@ -110,7 +110,7 @@ a {
         fill: #121212; }
     .mi-header--fixed .mi-header__inner {
       padding: 20px 40px; }
-      @media screen and (max-width: 720px) {
+      @media screen and (max-width: 768px) {
         .mi-header--fixed .mi-header__inner {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -126,7 +126,7 @@ a {
       -ms-flex-order: 2;
       order: 2;
       position: relative; }
-      @media screen and (max-width: 720px) {
+      @media screen and (max-width: 768px) {
         .mi-header--fixed .mi-header__center {
           display: none; } }
     .mi-header--fixed .mi-header__right {
@@ -182,7 +182,7 @@ a {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 20px 40px; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-header__inner {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -195,12 +195,12 @@ a {
   .mi-header__left {
     position: relative;
     z-index: 2; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-header__left {
         display: none; } }
   .mi-header__right {
     z-index: 1; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-header__right {
         width: 100%;
         -webkit-box-ordinal-group: 2;
@@ -215,7 +215,7 @@ a {
     right: 0;
     margin: auto;
     width: 100%; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-header__center {
         position: relative;
         left: auto;
@@ -231,7 +231,7 @@ a {
   width: 24px;
   height: 24px;
   padding: 8px; }
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 768px) {
     .mi-menu {
       display: inline-block; } }
   .mi-menu img {
@@ -255,7 +255,7 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 768px) {
     .mi-gnav {
       display: block; } }
   .mi-gnav__item {
@@ -269,7 +269,7 @@ a {
     .mi-gnav__item a {
       display: block;
       padding: 4px 14px; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-gnav__item {
         font-size: 1.6rem;
         margin-bottom: 20px; }
@@ -294,7 +294,7 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 768px) {
     .mi-signin {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -319,7 +319,7 @@ a {
       right: 0;
       margin: auto;
       border-right: 1px solid rgba(0, 0, 0, 0.3); }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-signin__item {
         margin-right: 0px;
         padding-right: 0px;
@@ -365,7 +365,7 @@ a {
     font-size: 2rem; }
     .mi-trial-button--big a {
       padding: 22px 28px; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-trial-button--big {
         font-size: 1.8rem; }
         .mi-trial-button--big a {
@@ -376,7 +376,7 @@ a {
   -webkit-transition: background 0.2s;
   transition: background 0.2s;
   border-radius: 4px; }
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 768px) {
     .mi-login-button {
       display: none; } }
   .mi-login-button a {
@@ -397,7 +397,7 @@ a {
 .mi-main__section {
   padding-top: 100px;
   margin-bottom: 100px; }
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 768px) {
     .mi-main__section {
       margin-bottom: 40px;
       padding-top: 40px; } }
@@ -408,7 +408,7 @@ a {
     background-position: right -230px top 130px;
     background-size: 700px 600px;
     background-repeat: no-repeat; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-main__section--bg01 {
         background: none; } }
   .mi-main__section--bg02 {
@@ -416,7 +416,7 @@ a {
     background-position: left -310px top 340px;
     background-size: 870px 800px;
     background-repeat: no-repeat; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-main__section--bg02 {
         background: none; } }
   .mi-main__section--bg03 {
@@ -424,13 +424,13 @@ a {
     background-position: right -220px top 0px;
     background-size: 800px 1200px;
     background-repeat: no-repeat; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-main__section--bg03 {
         background: none; } }
 
 .mi-main__content {
   margin-bottom: 80px; }
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 768px) {
     .mi-main__content {
       margin-bottom: 40px; } }
 
@@ -439,7 +439,7 @@ a {
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 100% auto; }
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 768px) {
     .mi-hero {
       background-size: 400% 200%;
       background-position: center top -400px; } }
@@ -449,7 +449,7 @@ a {
     background-position: left top;
     background-size: 100% auto;
     padding-top: 140px; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-hero__inner {
         background-size: 340% 100%;
         background-position: center top;
@@ -465,7 +465,7 @@ a {
       background-image: url(../img/svg-search.svg);
       background-repeat: no-repeat;
       background-size: 100% auto; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-hero__inner::before {
         display: none; } }
   .mi-hero__title {
@@ -475,7 +475,7 @@ a {
     font-size: 80px;
     font-weight: bold;
     margin: 0 auto 30px; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-hero__title {
         font-size: 20px;
         width: auto;
@@ -486,7 +486,7 @@ a {
     line-height: 1.8;
     margin-bottom: 30px;
     font-size: 2rem; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-hero__sub {
         font-size: 1.4rem;
         text-align: left;
@@ -502,7 +502,7 @@ a {
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 30px; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-hero__buttons {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -515,7 +515,7 @@ a {
     margin-right: 30px; }
     .mi-hero__button:last-child {
       margin-right: 0px; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-hero__button {
         margin-right: auto;
         margin-left: auto;
@@ -528,7 +528,7 @@ a {
     text-align: center;
     color: #fff;
     margin-bottom: 30px; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-hero__lead {
         font-size: 1.3rem;
         margin-bottom: 20px; } }
@@ -539,7 +539,7 @@ a {
     box-shadow: 0px 12px 90px rgba(27, 53, 120, 0.12), 0px 9px 46px rgba(27, 37, 120, 0.15);
     border-radius: 12px;
     background: #fff; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-hero__content {
         width: 90%;
         -webkit-box-shadow: 0px 12px 12px rgba(27, 53, 120, 0.12), 0px 9px 8px rgba(27, 37, 120, 0.15);
@@ -568,13 +568,13 @@ a {
   .mi-normal-button:hover {
     background: #D8D8D8; }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .mi-section {
-    padding: 0 12px; } }
+    padding: 0 3%; } }
 
 .mi-section__header {
   margin-bottom: 60px; }
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 768px) {
     .mi-section__header {
       margin-bottom: 40px; } }
 
@@ -585,7 +585,7 @@ a {
   .mi-section-title__lead {
     font-size: 1.8rem;
     margin-bottom: 20px; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-section-title__lead {
         font-size: 1.4rem;
         margin-bottom: 12px; } }
@@ -594,7 +594,7 @@ a {
     font-size: 3.8rem;
     font-weight: 600;
     line-height: 1.6; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-section-title__rabel {
         font-size: 2.2rem;
         margin-bottom: 12px; } }
@@ -606,11 +606,12 @@ a {
     color: #4E4E4E;
     font-size: 1.6rem;
     line-height: 1.8; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-section-title__text {
         font-size: 1.5rem;
         text-align: left;
-        line-height: 1.6; } }
+        line-height: 1.6;
+        padding: 0 12px; } }
 
 .mi-card-alignment {
   display: -webkit-box;
@@ -623,18 +624,19 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 768px) {
     .mi-card-alignment {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column; } }
+      flex-direction: column;
+      padding: 0 12px; } }
   .mi-card-alignment .mi-card {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
     margin-right: 20px; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-card-alignment .mi-card {
         margin-right: auto;
         margin-bottom: 20px;
@@ -643,14 +645,14 @@ a {
       margin-right: 0; }
 
 .mi-card {
-  min-width: 400px;
+  min-width: 300px;
   position: relative;
   background: #fff;
   border-radius: 6px;
   padding: 30px 20px 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 768px) {
     .mi-card {
       min-width: 300px; } }
   .mi-card__badge {
@@ -685,9 +687,13 @@ a {
     text-align: left;
     line-height: 1.6; }
 
+@media screen and (max-width: 768px) {
+  .mi-panel-vertical {
+    padding: 0 12px; } }
+
 .mi-panel-vertical .mi-panel {
   margin-bottom: 80px; }
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 768px) {
     .mi-panel-vertical .mi-panel {
       margin-bottom: 40px; } }
 
@@ -698,7 +704,7 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 768px) {
     .mi-panel {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -710,7 +716,7 @@ a {
     -webkit-box-shadow: 0px 12px 90px rgba(27, 53, 120, 0.12), 0px 9px 46px rgba(27, 37, 120, 0.15);
     box-shadow: 0px 12px 90px rgba(27, 53, 120, 0.12), 0px 9px 46px rgba(27, 37, 120, 0.15);
     border-radius: 12px; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-panel__img {
         width: 100%;
         margin-left: auto;
@@ -719,7 +725,7 @@ a {
         -ms-flex-order: 2;
         order: 2;
         margin-top: 30px; } }
-  @media screen and (max-width: 720px) and (max-width: 720px) {
+  @media screen and (max-width: 768px) and (max-width: 768px) {
     .mi-panel__img {
       -webkit-box-shadow: 0px 12px 12px rgba(27, 53, 120, 0.12), 0px 9px 8px rgba(27, 37, 120, 0.15);
       box-shadow: 0px 12px 12px rgba(27, 53, 120, 0.12), 0px 9px 8px rgba(27, 37, 120, 0.15); } }
@@ -732,7 +738,7 @@ a {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0 30px 0; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-panel__content {
         width: 100%;
         margin-left: auto;
@@ -747,7 +753,7 @@ a {
     font-weight: bold; }
     .mi-panel__number--big {
       font-size: 4rem; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-panel__number {
         font-size: 2rem; }
         .mi-panel__number--big {
@@ -757,14 +763,14 @@ a {
     font-weight: 600;
     line-height: 1.6;
     margin-bottom: 20px; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-panel__title {
         font-size: 1.6rem; } }
   .mi-panel__text {
     color: #4E4E4E;
     line-height: 1.8;
     font-size: 1.6rem; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-panel__text {
         font-size: 1.4rem; } }
 
@@ -790,7 +796,7 @@ a {
   display: inline-block;
   font-size: 3.4rem;
   font-weight: bold; }
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 768px) {
     .mi-service-name {
       font-size: 2rem;
       padding: 20px 12px; } }
@@ -815,7 +821,7 @@ a {
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 100% auto; }
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 768px) {
     .mi-footer {
       background-size: 500% 100%;
       background-position: center bottom -50px; } }
@@ -828,7 +834,7 @@ a {
     display: inline-block;
     color: #fff;
     margin: 0 20px; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 768px) {
       .mi-footer-link__item {
         display: block;
         margin-bottom: 20px;
