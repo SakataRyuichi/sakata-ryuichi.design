@@ -22,7 +22,7 @@
                 </div><!-- /.mi-header__left -->
 
                 <div class="mi-header__center">
-                    <ul class="mi-gnav">
+                    <ul id="gnav" class="mi-gnav">
                         <li id="gnav-top" class="mi-gnav__item mi-gnav__item--current">
                             <a href="#top">トップ</a>
                         </li><!-- /.mi-gnav__item -->
@@ -39,16 +39,19 @@
                 </div><!-- /.mi-header__center -->
 
                 <div class="mi-header__right">
+                    <div id="menu-button" class="mi-menu">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="menu-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+                    </div><!-- /.mi-menu -->
                     <div class="mi-signin">
                         <div class="mi-signin__item">
-                            <div class="mi-traial-button">
+                            <div class="mi-trial-button">
                                 <a href="">
-                                    <div class="mi-traial-button__icon">
+                                    <div class="mi-trial-button__icon">
                                         <img src="./img/svg-flag.svg" alt="">
-                                    </div><!-- /.mi-traial-button__icon -->
-                                    <div class="mi-traial-button__rabel">無料トライアル</div><!-- /.mi-traial-button__rabel -->
+                                    </div><!-- /.mi-trial-button__icon -->
+                                    <div class="mi-trial-button__rabel">無料トライアル</div><!-- /.mi-trial-button__rabel -->
                                 </a>
-                            </div><!-- /.mi-traial-button -->
+                            </div><!-- /.mi-trial-button -->
                         </div><!-- /.mi-signin__item -->
                         <div class="mi-signin__item">
                             <div class="mi-login-button">
@@ -87,15 +90,15 @@
                         <!-- /.mi-hero__sub -->
                         <div class="mi-hero__buttons">
                             <div class="mi-hero__button">
-                                <div class="mi-traial-button">
+                                <div class="mi-trial-button">
                                     <a href="">
-                                        <div class="mi-traial-button__icon">
+                                        <div class="mi-trial-button__icon">
                                             <img src="./img/svg-flag.svg" alt="">
-                                        </div><!-- /.mi-traial-button__icon -->
-                                        <div class="mi-traial-button__rabel">無料トライアルをはじめる</div>
-                                        <!-- /.mi-traial-button__rabel -->
+                                        </div><!-- /.mi-trial-button__icon -->
+                                        <div class="mi-trial-button__rabel">無料トライアルをはじめる</div>
+                                        <!-- /.mi-trial-button__rabel -->
                                     </a>
-                                </div><!-- /.mi-traial-button -->
+                                </div><!-- /.mi-trial-button -->
                             </div><!-- /.mi-hero__button -->
                             <div class="mi-hero__button">
                                 <div class="mi-normal-button">
@@ -356,7 +359,7 @@
                     <div class="mi-section__header">
                         <div class="mi-section-title">
                             <div class="mi-section-title__rabel">選べる<span
-                                    class="mi-section-title__rabel--pink">価格</span></div>
+                                    class="mi-section-title__rabel--pink">価格体系</span></div>
                             <!-- /.mi-section-title__rabel -->
                             <div class="mi-section-title__text">BizteX mikkeには、規模に合わせて選べる価格体系を用意してあります。</div>
                             <!-- /.mi-section-title__text -->
@@ -404,15 +407,15 @@
                         </div><!-- /.mi-button-vertical -->
 
                         <div class="mi-button-vertical__item">
-                            <div class="mi-traial-button mi-traial-button--big">
+                            <div class="mi-trial-button mi-trial-button--big">
                                 <a href="">
-                                    <div class="mi-traial-button__icon">
+                                    <div class="mi-trial-button__icon">
                                         <img src="./img/svg-flag.svg" alt="">
-                                    </div><!-- /.mi-traial-button__icon -->
-                                    <div class="mi-traial-button__rabel">無料トライアルをはじめる</div>
-                                    <!-- /.mi-traial-button__rabel -->
+                                    </div><!-- /.mi-trial-button__icon -->
+                                    <div class="mi-trial-button__rabel">無料トライアルをはじめる</div>
+                                    <!-- /.mi-trial-button__rabel -->
                                 </a>
-                            </div><!-- /.mi-traial-button -->
+                            </div><!-- /.mi-trial-button -->
                         </div><!-- /.mi-button-vertical__item -->
 
                     </div><!-- /.mi-section__content -->
@@ -455,8 +458,8 @@
 
         $(window).on('scroll', function () {
             var scrollPos = $(window).scrollTop();
-            $(".mi-header").toggleClass('mi-header--fixed', $(this).scrollTop() > 700);
-            $(".mi-header").toggleClass('mi-header--animation', $(this).scrollTop() > 800);
+            $(".mi-header").toggleClass('mi-header--fixed', $(this).scrollTop() > 600);
+            $(".mi-header").toggleClass('mi-header--animation', $(this).scrollTop() > 650);
 
             if(scrollPos >= topPosition - 50) {
                 $(".mi-gnav__item").removeClass("mi-gnav__item--current");
@@ -477,6 +480,14 @@
                 $(".mi-gnav__item").removeClass("mi-gnav__item--current");
                 $("#gnav-price").addClass("mi-gnav__item--current");
             }
+        });
+
+        $("#menu-button").on('click', function() {
+            $(".mi-header").toggleClass("mi-header--open");
+        });
+
+        $("#gnav li").on('click', function() {
+            $(".mi-header").toggleClass("mi-header--open");
         });
 
     </script>
