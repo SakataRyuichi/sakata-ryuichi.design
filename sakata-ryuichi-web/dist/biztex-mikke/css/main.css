@@ -238,6 +238,9 @@ a {
   fill: #fff;
   height: 22px;
   width: auto; }
+  @media screen and (max-width: 768px) {
+    .mi-logo-biztex-mikke-svg {
+      height: 16px; } }
 
 .mi-footer {
   -webkit-box-sizing: border-box;
