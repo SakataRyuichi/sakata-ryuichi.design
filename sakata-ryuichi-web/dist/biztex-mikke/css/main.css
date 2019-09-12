@@ -95,6 +95,8 @@ a {
     @media screen and (max-width: 768px) {
       .mi-header--fixed {
         background: none; } }
+    .mi-header--fixed .mi-logo-biztex-mikke-svg {
+      fill: #091793; }
     .mi-header--fixed .mi-gnav__item {
       color: #121212; }
     .mi-header--fixed .mi-login-button {
@@ -227,6 +229,11 @@ a {
         -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
         order: 2; } }
+
+.mi-logo-biztex-mikke-svg {
+  fill: #fff;
+  height: 22px;
+  width: auto; }
 
 .mi-footer {
   -webkit-box-sizing: border-box;
@@ -408,6 +415,119 @@ a {
     text-align: center;
     margin-bottom: 40px; }
 
+.mi-form {
+  padding: 60px 100px; }
+  .mi-form__title {
+    color: #cd0d5e;
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 60px; }
+  .mi-form__column {
+    margin-bottom: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%; }
+  .mi-form__item {
+    width: 100%; }
+  .mi-form__text {
+    display: block;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.4rem;
+    margin-bottom: 12px; }
+  .mi-form__link {
+    display: block;
+    text-decoration: underline;
+    color: #44b0ff;
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 1.4rem;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s; }
+    .mi-form__link:hover {
+      color: #0080dd; }
+
+.mi-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .mi-input__required {
+    background: #cd0d5e;
+    border-radius: 4px;
+    color: #fff;
+    padding: 4px 8px;
+    line-height: 1.2;
+    margin-right: 12px;
+    font-size: 1.2rem; }
+  .mi-input__label {
+    width: 200px;
+    margin-right: 12px;
+    font-weight: 600;
+    padding-right: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  .mi-input__input-text {
+    -webkit-box-flex: 5;
+    -ms-flex-positive: 5;
+    flex-grow: 5;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background: #f9f9f9;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-right: 12px;
+    color: #121212;
+    font-weight: 600;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s; }
+    .mi-input__input-text:last-child {
+      margin-right: 0; }
+    .mi-input__input-text:hover {
+      background: #e0e0e0; }
+  .mi-input__submit {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 2rem;
+    background: #cd0d5e;
+    -webkit-box-shadow: 0px 3px 26px rgba(255, 68, 158, 0.25), 0px 2px 15px rgba(242, 52, 121, 0.2);
+    box-shadow: 0px 3px 26px rgba(255, 68, 158, 0.25), 0px 2px 15px rgba(242, 52, 121, 0.2);
+    padding: 16px 20px;
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.4;
+    width: 80%;
+    margin: 40px auto;
+    border-radius: 6px;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+    cursor: pointer; }
+    .mi-input__submit:hover {
+      background: #b00b51; }
+
 .mi-gnav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -502,8 +622,8 @@ a {
 .mi-hero {
   background-image: url(../img/hero-bg.svg);
   background-repeat: no-repeat;
-  background-position: left top;
-  background-size: 100% auto; }
+  background-position: left top -200px;
+  background-size: 100% 120%; }
   @media screen and (max-width: 768px) {
     .mi-hero {
       background-size: 400% 200%;
@@ -511,8 +631,8 @@ a {
   .mi-hero__inner {
     background-image: url(../img/hero-bg-grid.svg);
     background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 100% auto;
+    background-position: left top -280px;
+    background-size: 100% 120%;
     padding-top: 140px; }
     @media screen and (max-width: 768px) {
       .mi-hero__inner {
@@ -535,9 +655,9 @@ a {
         display: none; } }
   .mi-hero__title {
     display: block;
-    width: 500px;
+    text-align: center;
     color: #fff;
-    font-size: 80px;
+    font-size: 4.4rem;
     font-weight: bold;
     margin: 0 auto 30px; }
     @media screen and (max-width: 768px) {
@@ -545,6 +665,13 @@ a {
         font-size: 20px;
         width: auto;
         text-align: center; } }
+  .mi-hero__title-svg {
+    margin-bottom: 40px;
+    text-align: center; }
+    .mi-hero__title-svg .mi-logo-mikke-svg {
+      fill: #fff;
+      width: 400px;
+      height: auto; }
   .mi-hero__sub {
     text-align: center;
     color: #fff;
