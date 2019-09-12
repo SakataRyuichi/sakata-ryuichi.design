@@ -136,8 +136,8 @@ a {
         width: 100%;
         text-align: right; } }
     @media screen and (max-width: 768px) {
-      .mi-header--fixed .mi-header__left {
-        display: none; } }
+      .mi-header--fixed .mi-header__left .mi-logo-biztex-mikke-svg {
+        fill: #121212; } }
     .mi-header--fixed .mi-gnav__item:hover {
       color: #121212; }
     .mi-header--fixed .mi-gnav__item--current {
@@ -152,6 +152,8 @@ a {
       background: #f9f9f9;
       top: 0;
       bottom: 0; }
+      .mi-header--open .mi-logo-biztex-mikke-svg {
+        fill: #121212; }
       .mi-header--open .mi-menu .menu-svg {
         fill: #121212; }
       .mi-header--open .mi-menu .menu-close-svg {
@@ -201,7 +203,9 @@ a {
     z-index: 2; }
     @media screen and (max-width: 768px) {
       .mi-header__left {
-        display: none; } }
+        position: absolute;
+        left: 20px;
+        top: 20px; } }
   .mi-header__right {
     z-index: 1; }
     @media screen and (max-width: 768px) {
@@ -340,6 +344,10 @@ a {
   .mi-trial-button a {
     display: block;
     padding: 12px 16px; }
+    @media screen and (max-width: 768px) {
+      .mi-trial-button a {
+        padding: 18px 16px;
+        font-size: 1.8rem; } }
   .mi-trial-button__icon {
     display: inline-block;
     width: 17px;
@@ -401,9 +409,15 @@ a {
   text-align: center;
   -webkit-transition: background 0.2s;
   transition: background 0.2s; }
+  @media screen and (max-width: 768px) {
+    .mi-normal-button {
+      font-size: 1.4rem; } }
   .mi-normal-button a {
     display: block;
     padding: 8px 12px; }
+    @media screen and (max-width: 768px) {
+      .mi-normal-button a {
+        padding: 12px 12px; } }
   .mi-normal-button__rabel {
     font-size: 1.6rem; }
   .mi-normal-button:hover {
@@ -417,12 +431,18 @@ a {
 
 .mi-form {
   padding: 60px 100px; }
+  @media screen and (max-width: 768px) {
+    .mi-form {
+      padding: 20px 8px; } }
   .mi-form__title {
     color: #cd0d5e;
     font-size: 2.8rem;
     font-weight: 600;
     text-align: center;
     margin-bottom: 60px; }
+    @media screen and (max-width: 768px) {
+      .mi-form__title {
+        font-size: 2rem; } }
   .mi-form__column {
     margin-bottom: 36px;
     display: -webkit-box;
@@ -433,6 +453,12 @@ a {
     -ms-flex-direction: row;
     flex-direction: row;
     width: 100%; }
+    @media screen and (max-width: 768px) {
+      .mi-form__column {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
   .mi-form__item {
     width: 100%; }
   .mi-form__text {
@@ -464,7 +490,16 @@ a {
   flex-direction: row;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media screen and (max-width: 768px) {
+    .mi-input {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: 0 8px; } }
   .mi-input__required {
     background: #cd0d5e;
     border-radius: 4px;
@@ -473,13 +508,20 @@ a {
     line-height: 1.2;
     margin-right: 12px;
     font-size: 1.2rem; }
+    .mi-input__required--blue {
+      background: #44b0ff; }
   .mi-input__label {
     width: 200px;
     margin-right: 12px;
     font-weight: 600;
     padding-right: 20px;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    line-height: 1.4; }
+    @media screen and (max-width: 768px) {
+      .mi-input__label {
+        width: 100%;
+        margin-bottom: 12px; } }
   .mi-input__input-text {
     -webkit-box-flex: 5;
     -ms-flex-positive: 5;
@@ -497,11 +539,24 @@ a {
     color: #121212;
     font-weight: 600;
     -webkit-transition: background 0.3s;
-    transition: background 0.3s; }
+    transition: background 0.3s;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
     .mi-input__input-text:last-child {
       margin-right: 0; }
     .mi-input__input-text:hover {
       background: #e0e0e0; }
+    @media screen and (max-width: 768px) {
+      .mi-input__input-text {
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 12px;
+        padding: 16px 20px; }
+        .mi-input__input-text:last-child {
+          margin-bottom: 0px; } }
   .mi-input__submit {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -527,6 +582,9 @@ a {
     cursor: pointer; }
     .mi-input__submit:hover {
       background: #b00b51; }
+    @media screen and (max-width: 768px) {
+      .mi-input__submit {
+        width: 90%; } }
 
 .mi-gnav {
   display: -webkit-box;
@@ -622,22 +680,12 @@ a {
 .mi-hero {
   background-image: url(../img/hero-bg.svg);
   background-repeat: no-repeat;
-  background-position: left top -200px;
-  background-size: 100% 120%; }
-  @media screen and (max-width: 768px) {
-    .mi-hero {
-      background-size: 400% 200%;
-      background-position: center top -400px; } }
+  background-position: left top;
+  background-size: auto 100%; }
   .mi-hero__inner {
-    background-image: url(../img/hero-bg-grid.svg);
-    background-repeat: no-repeat;
-    background-position: left top -280px;
-    background-size: 100% 120%;
     padding-top: 140px; }
     @media screen and (max-width: 768px) {
       .mi-hero__inner {
-        background-size: 340% 100%;
-        background-position: center top;
         padding-top: 100px; } }
     .mi-hero__inner::before {
       content: "";
@@ -672,6 +720,9 @@ a {
       fill: #fff;
       width: 400px;
       height: auto; }
+      @media screen and (max-width: 768px) {
+        .mi-hero__title-svg .mi-logo-mikke-svg {
+          width: 240px; } }
   .mi-hero__sub {
     text-align: center;
     color: #fff;
@@ -733,7 +784,7 @@ a {
     background: #fff; }
     @media screen and (max-width: 768px) {
       .mi-hero__content {
-        width: 90%;
+        width: 95%;
         -webkit-box-shadow: 0px 12px 12px rgba(27, 53, 120, 0.12), 0px 9px 8px rgba(27, 37, 120, 0.15);
         box-shadow: 0px 12px 12px rgba(27, 53, 120, 0.12), 0px 9px 8px rgba(27, 37, 120, 0.15); } }
   .mi-hero__img img {
