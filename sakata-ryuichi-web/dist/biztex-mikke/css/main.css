@@ -317,6 +317,42 @@ a {
 /*
  parts
  */
+.mi-text {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  line-height: 1.8; }
+  @media screen and (max-width: 768px) {
+    .mi-text {
+      font-size: 1.4rem; } }
+  .mi-text--big {
+    font-size: 2rem;
+    font-weight: 600; }
+    @media screen and (max-width: 768px) {
+      .mi-text--big {
+        font-size: 1.8rem; } }
+  .mi-text--mega {
+    font-size: 2.8rem;
+    font-weight: 600; }
+    @media screen and (max-width: 768px) {
+      .mi-text--mega {
+        font-size: 2.2rem; } }
+  .mi-text--center {
+    text-align: center; }
+    @media screen and (max-width: 768px) {
+      .mi-text--center {
+        text-align: left; } }
+  .mi-text__image {
+    display: block;
+    width: 100px;
+    margin-bottom: 20px; }
+    .mi-text__image--big {
+      width: 200px; }
+    .mi-text__image--center {
+      margin-left: auto;
+      margin-right: auto; }
+  .mi-text__block {
+    margin-bottom: 40px; }
+
 .mi-menu {
   display: none;
   width: 24px;
@@ -432,55 +468,54 @@ a {
     text-align: center;
     margin-bottom: 40px; }
 
-.mi-form {
-  padding: 60px 100px; }
+.mi-form__title {
+  color: #cd0d5e;
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px; }
   @media screen and (max-width: 768px) {
-    .mi-form {
-      padding: 20px 8px; } }
-  .mi-form__title {
-    color: #cd0d5e;
-    font-size: 2.8rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 60px; }
-    @media screen and (max-width: 768px) {
-      .mi-form__title {
-        font-size: 2rem; } }
-  .mi-form__column {
-    margin-bottom: 36px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    width: 100%; }
-    @media screen and (max-width: 768px) {
-      .mi-form__column {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column; } }
-  .mi-form__item {
-    width: 100%; }
-  .mi-form__text {
-    display: block;
-    text-align: center;
-    font-weight: normal;
-    font-size: 1.4rem;
-    margin-bottom: 12px; }
-  .mi-form__link {
-    display: block;
-    text-decoration: underline;
-    color: #44b0ff;
-    margin-bottom: 12px;
-    text-align: center;
-    font-size: 1.4rem;
-    -webkit-transition: color 0.2s;
-    transition: color 0.2s; }
-    .mi-form__link:hover {
-      color: #0080dd; }
+    .mi-form__title {
+      font-size: 2rem; } }
+
+.mi-form__column {
+  margin-bottom: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%; }
+  @media screen and (max-width: 768px) {
+    .mi-form__column {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+
+.mi-form__item {
+  width: 100%; }
+
+.mi-form__text {
+  display: block;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.4rem;
+  margin-bottom: 12px; }
+
+.mi-form__link {
+  display: block;
+  text-decoration: underline;
+  color: #44b0ff;
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 1.4rem;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s; }
+  .mi-form__link:hover {
+    color: #0080dd; }
 
 .mi-input {
   display: -webkit-box;
@@ -683,8 +718,11 @@ a {
 .mi-hero {
   background-image: url(../img/hero-bg.svg);
   background-repeat: no-repeat;
-  background-position: left top;
-  background-size: auto 100%; }
+  background-position: center bottom;
+  background-size: 120% 160%; }
+  @media screen and (max-width: 768px) {
+    .mi-hero {
+      background-size: 400% 120%; } }
   .mi-hero__inner {
     padding-top: 140px; }
     @media screen and (max-width: 768px) {
@@ -790,6 +828,11 @@ a {
         width: 95%;
         -webkit-box-shadow: 0px 12px 12px rgba(27, 53, 120, 0.12), 0px 9px 8px rgba(27, 37, 120, 0.15);
         box-shadow: 0px 12px 12px rgba(27, 53, 120, 0.12), 0px 9px 8px rgba(27, 37, 120, 0.15); } }
+  .mi-hero__content-inner {
+    padding: 60px 100px 40px; }
+    @media screen and (max-width: 768px) {
+      .mi-hero__content-inner {
+        padding: 20px 12px; } }
   .mi-hero__img img {
     display: block;
     width: 100%;
