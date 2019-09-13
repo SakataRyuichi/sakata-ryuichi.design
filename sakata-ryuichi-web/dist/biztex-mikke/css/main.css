@@ -822,21 +822,26 @@ a {
     -webkit-box-shadow: 0px 12px 90px rgba(27, 53, 120, 0.12), 0px 9px 46px rgba(27, 37, 120, 0.15);
     box-shadow: 0px 12px 90px rgba(27, 53, 120, 0.12), 0px 9px 46px rgba(27, 37, 120, 0.15);
     border-radius: 12px;
-    background: #fff; }
+    background: transparent; }
     @media screen and (max-width: 768px) {
       .mi-hero__content {
         width: 95%;
         -webkit-box-shadow: 0px 12px 12px rgba(27, 53, 120, 0.12), 0px 9px 8px rgba(27, 37, 120, 0.15);
         box-shadow: 0px 12px 12px rgba(27, 53, 120, 0.12), 0px 9px 8px rgba(27, 37, 120, 0.15); } }
   .mi-hero__content-inner {
-    padding: 60px 100px 40px; }
+    background: #fff;
+    padding: 60px 100px 40px;
+    border-radius: 12px; }
     @media screen and (max-width: 768px) {
       .mi-hero__content-inner {
         padding: 20px 12px; } }
-  .mi-hero__img img {
-    display: block;
-    width: 100%;
-    height: auto; }
+  .mi-hero__img {
+    border-radius: 12px;
+    overflow: hidden; }
+    .mi-hero__img img {
+      display: block;
+      width: 100%;
+      height: auto; }
 
 @media screen and (max-width: 768px) {
   .mi-section {
@@ -986,7 +991,8 @@ a {
     margin: 60px 30px 0;
     -webkit-box-shadow: 0px 12px 90px rgba(27, 53, 120, 0.12), 0px 9px 46px rgba(27, 37, 120, 0.15);
     box-shadow: 0px 12px 90px rgba(27, 53, 120, 0.12), 0px 9px 46px rgba(27, 37, 120, 0.15);
-    border-radius: 12px; }
+    border-radius: 12px;
+    overflow: hidden; }
     @media screen and (max-width: 768px) {
       .mi-panel__img {
         width: 100%;
