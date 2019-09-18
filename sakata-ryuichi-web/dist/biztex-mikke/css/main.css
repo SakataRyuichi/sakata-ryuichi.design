@@ -88,7 +88,7 @@ a {
   width: 100%; }
   .mi-header--fixed {
     position: fixed;
-    top: -50px;
+    top: -100px;
     background: #f9f9f9;
     -webkit-transition: top 0.3s;
     transition: top 0.3s; }
