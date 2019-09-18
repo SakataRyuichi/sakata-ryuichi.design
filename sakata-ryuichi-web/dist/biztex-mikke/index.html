@@ -579,8 +579,8 @@
 
         $(window).on('scroll', function () {
             var scrollPos = $(window).scrollTop();
-            $(".mi-header").toggleClass('mi-header--fixed', $(this).scrollTop() > 600);
-            $(".mi-header").toggleClass('mi-header--animation', $(this).scrollTop() > 650);
+            $(".mi-header").toggleClass('mi-header--fixed', $(this).scrollTop() > 500);
+            $(".mi-header").toggleClass('mi-header--animation', $(this).scrollTop() > 800);
 
             if (scrollPos >= topPosition - 50) {
                 $(".mi-gnav__item").removeClass("mi-gnav__item--current");
