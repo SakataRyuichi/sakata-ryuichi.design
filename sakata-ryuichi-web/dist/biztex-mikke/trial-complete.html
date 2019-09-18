@@ -148,32 +148,6 @@
         </div><!-- /.mi-main__section -->
 
 
-        <div id="price" class="mi-main__section mi-main__section--bg03" style="height:1200px;">
-
-            <div class="mi-section">
-                <div class="mi-limitter">
-
-                    <div class="mi-section__header">
-                        <div class="mi-section-title">
-                            <div class="mi-section-title__rabel">選べる<span
-                                    class="mi-section-title__rabel--pink">価格体系</span></div>
-                            <!-- /.mi-section-title__rabel -->
-                            <div class="mi-section-title__text">BizteX mikkeには、規模に合わせて選べる価格体系を用意してあります。</div>
-                            <!-- /.mi-section-title__text -->
-                        </div><!-- /.mi-section-title -->
-                    </div><!-- /.mi-section__header -->
-
-                    <div class="mi-section__content">
-                        プライシング予定地
-                    </div><!-- /.mi-section__content -->
-                </div><!-- /.mi-limitter -->
-
-            </div><!-- /.mi-section -->
-
-        </div><!-- /.mi-main__section -->
-
-
-
     </div><!-- /.mi-main -->
 
 
@@ -193,6 +167,31 @@
     </div><!-- /.mi-footer -->
 
 
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(window).on('scroll', function () {
+            var scrollPos = $(window).scrollTop();
+            $(".mi-header").toggleClass('mi-header--fixed', $(this).scrollTop() > 600);
+            $(".mi-header").toggleClass('mi-header--animation', $(this).scrollTop() > 650);
+        });
+
+        $("#menu-button").on('click', function () {
+            $(".mi-header").toggleClass("mi-header--open");
+            $(".menu-svg").toggle();
+            $(".menu-close-svg").toggle();
+        });
+
+        $("#gnav li").on('click', function () {
+            $(".mi-header").toggleClass("mi-header--open");
+            $(".menu-svg").toggle();
+            $(".menu-close-svg").toggle();
+        });
+
+    </script>
 </body>
 
 </html>

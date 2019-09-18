@@ -301,8 +301,8 @@ a {
         background: none; } }
   .mi-main__section--bg03 {
     background: url(../img/bg-svg03.svg);
-    background-position: right -220px top 0px;
-    background-size: 800px 1200px;
+    background-position: right -120px top 0px;
+    background-size: 600px 900px;
     background-repeat: no-repeat; }
     @media screen and (max-width: 768px) {
       .mi-main__section--bg03 {
@@ -373,6 +373,7 @@ a {
 
 .mi-trial-button {
   display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 4px;
   background: #cd0d5e;
   -webkit-box-shadow: 0px 3px 26px rgba(255, 68, 158, 0.25), 0px 2px 15px rgba(242, 52, 121, 0.2);
@@ -457,10 +458,15 @@ a {
     @media screen and (max-width: 768px) {
       .mi-normal-button a {
         padding: 12px 12px; } }
+  .mi-normal-button--big {
+    font-size: 1.6rem;
+    line-height: 1.8; }
+    .mi-normal-button--big a {
+      padding: 16px 12px; }
   .mi-normal-button__rabel {
     font-size: 1.6rem; }
   .mi-normal-button:hover {
-    background: #d8d8d8; }
+    background: #f9f9f9; }
 
 .mi-button-vertical {
   text-align: center; }
@@ -722,7 +728,7 @@ a {
   background-size: 120% 160%; }
   @media screen and (max-width: 768px) {
     .mi-hero {
-      background-size: 400% 120%; } }
+      background-size: 400% 145%; } }
   .mi-hero__inner {
     padding-top: 140px; }
     @media screen and (max-width: 768px) {
@@ -852,6 +858,14 @@ a {
   @media screen and (max-width: 768px) {
     .mi-section__header {
       margin-bottom: 60px; } }
+
+.mi-section__content {
+  margin-bottom: 60px; }
+  .mi-section__content:last-child {
+    margin-bottom: 0; }
+  @media screen and (max-width: 768px) {
+    .mi-section__content {
+      margin-bottom: 40px; } }
 
 .mi-section-title {
   text-align: center;
@@ -1083,3 +1097,117 @@ a {
     background: #0080cb; }
   .mi-service-name--sonar {
     background: #c80000; }
+
+.mi-pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative; }
+  @media screen and (max-width: 768px) {
+    .mi-pricing {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+  .mi-pricing__item {
+    width: 380px;
+    margin-right: 20px;
+    background: #fff;
+    -webkit-box-shadow: 0px 12px 90px rgba(27, 53, 120, 0.12), 0px 9px 46px rgba(27, 37, 120, 0.15);
+    box-shadow: 0px 12px 90px rgba(27, 53, 120, 0.12), 0px 9px 46px rgba(27, 37, 120, 0.15);
+    border-radius: 12px;
+    padding: 20px 28px 60px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 1;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s; }
+    .mi-pricing__item:last-child {
+      margin-right: 0px; }
+    .mi-pricing__item:hover {
+      z-index: 2;
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05); }
+    @media screen and (max-width: 768px) {
+      .mi-pricing__item {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 40px;
+        -webkit-box-shadow: 0px 12px 12px rgba(27, 53, 120, 0.12), 0px 9px 8px rgba(27, 37, 120, 0.15);
+        box-shadow: 0px 12px 12px rgba(27, 53, 120, 0.12), 0px 9px 8px rgba(27, 37, 120, 0.15);
+        padding: 16px 20px 28px; } }
+  .mi-pricing__type {
+    text-align: center;
+    margin-bottom: 28px;
+    font-weight: 600; }
+    @media screen and (max-width: 768px) {
+      .mi-pricing__type {
+        margin-bottom: 20px; } }
+  .mi-pricing__price {
+    text-align: center;
+    height: 120px;
+    line-height: 120px;
+    margin-bottom: 20px; }
+    @media screen and (max-width: 768px) {
+      .mi-pricing__price {
+        height: 80px;
+        line-height: 80px; } }
+  .mi-pricing__value {
+    font-weight: 600;
+    color: #cd0d5e;
+    display: inline;
+    font-size: 8rem; }
+    @media screen and (max-width: 768px) {
+      .mi-pricing__value {
+        font-size: 4rem; } }
+  .mi-pricing__unit {
+    display: inline;
+    font-size: 2.8rem;
+    font-weight: 600; }
+    @media screen and (max-width: 768px) {
+      .mi-pricing__unit {
+        font-size: 2rem; } }
+  .mi-pricing__detail {
+    margin-bottom: 40px; }
+    @media screen and (max-width: 768px) {
+      .mi-pricing__detail {
+        margin-bottom: 20px; } }
+  .mi-pricing__footer {
+    text-align: center; }
+
+.mi-pricing-desc {
+  background: #f9f9f9;
+  padding: 12px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1.8rem; }
+  @media screen and (max-width: 768px) {
+    .mi-pricing-desc {
+      font-size: 1.4rem;
+      padding: 8px 12px; } }
+  .mi-pricing-desc__term {
+    width: 50%; }
+  .mi-pricing-desc__detail {
+    text-align: right;
+    width: 50%;
+    font-weight: 600; }
+  .mi-pricing-desc--pink {
+    color: #cd0d5e; }
