@@ -165,6 +165,17 @@ a {
         .mi-header--open .mi-gnav__item--current {
           background: #091793;
           color: #fff; } }
+  .mi-header--relative {
+    position: relative;
+    color: #121212;
+    padding-bottom: 80px; }
+    .mi-header--relative .mi-logo-biztex-mikke-svg {
+      fill: #091793; }
+    .mi-header--relative .mi-gnav__item,
+    .mi-header--relative .mi-login-button,
+    .mi-header--relative .mi-login-button__icon .svg-key {
+      fill: #121212;
+      color: #121212; }
   .mi-header--animation {
     top: 0; }
   .mi-header__inner {
@@ -1109,7 +1120,8 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  position: relative; }
+  position: relative;
+  width: 100%; }
   @media screen and (max-width: 768px) {
     .mi-pricing {
       -webkit-box-orient: vertical;
@@ -1131,12 +1143,10 @@ a {
     transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
     transition: transform 0.5s, -webkit-transform 0.5s; }
+    .mi-pricing__item--wide {
+      width: 600px; }
     .mi-pricing__item:last-child {
       margin-right: 0px; }
-    .mi-pricing__item:hover {
-      z-index: 2;
-      -webkit-transform: scale(1.05);
-      transform: scale(1.05); }
     @media screen and (max-width: 768px) {
       .mi-pricing__item {
         width: 100%;
@@ -1176,6 +1186,11 @@ a {
     @media screen and (max-width: 768px) {
       .mi-pricing__unit {
         font-size: 2rem; } }
+  .mi-pricing__text {
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 20px; }
   .mi-pricing__detail {
     margin-bottom: 40px; }
     @media screen and (max-width: 768px) {
@@ -1183,6 +1198,24 @@ a {
         margin-bottom: 20px; } }
   .mi-pricing__footer {
     text-align: center; }
+  .mi-pricing__button-horizon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .mi-pricing__button {
+    margin-right: 20px; }
+    .mi-pricing__button:last-child {
+      margin-right: 0; }
 
 .mi-pricing-desc {
   background: #f9f9f9;
@@ -1211,3 +1244,37 @@ a {
     font-weight: 600; }
   .mi-pricing-desc--pink {
     color: #cd0d5e; }
+
+.mi-terms__header {
+  margin-bottom: 40px; }
+
+.mi-terms__content {
+  margin-bottom: 40px; }
+  .mi-terms__content:last-child {
+    margin-bottom: 0; }
+
+.mi-terms__title {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 20px; }
+
+.mi-terms__text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 40px; }
+
+.mi-terms-desc {
+  line-height: 1.6;
+  font-size: 1.6rem; }
+  .mi-terms-desc__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 12px; }
+  .mi-terms-desc__item {
+    padding-left: 20px; }
+
+.mi-terms-list {
+  margin: 12px 0 12px 20px; }
+  .mi-terms-list__item {
+    line-height: 1.6;
+    padding-bottom: 8px; }
