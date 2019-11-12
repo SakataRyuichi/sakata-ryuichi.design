@@ -98,10 +98,86 @@
                 </div>
               </div>
             </div>
+            <div class="kd-header__sp-nav">
+              <div class="kd-snav">
+                <div class="kd-snav__item kd-snav__item--border">
+                  <div class="kd-contact-button"><a class="kd-contact-button__link" href="https://www.kidsdiary.jp/inquiry/">
+                      <div class="kd-contact-button__inner">
+                        <div class="kd-buttonWIthIcon">
+                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">email</i></div>
+                          <div class="kd-buttonWithIcon__label">お問い合わせ</div>
+                        </div>
+                      </div></a></div>
+                </div>
+                <div class="kd-snav__item">
+                  <div class="kd-snav__login">
+                    <div class="kd-snav__link js-menu-open">
+                      <div class="kd-buttonWIthIcon">
+                        <div class="kd-buttonWIthIcon__icon"><i class="material-icons">menu</i></div>
+                        <div class="kd-buttonWithIcon__label"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="kd-sp-menu js-menu">
+      <div class="kd-sp-menu__inner">
+        <div class="kd-sp-menu__head">
+          <div class="kd-sp-menu__close js-menu-close">
+            <div class="kd-buttonWIthIcon">
+              <div class="kd-buttonWIthIcon__icon"><i class="material-icons">close</i></div>
+              <div class="kd-buttonWithIcon__label"></div>
+            </div>
+          </div>
+        </div>
+        <div class="kd-sp-menu__list">
+          <div class="kd-sp-menu-list">
+            <div class="kd-sp-menu-list__item">
+              <div class="kd-sp-menu__login"><a class="kd-snav__link" href="https://kidsdiary.jp/login" target="_blank">
+                  <div class="kd-buttonWIthIcon">
+                    <div class="kd-buttonWIthIcon__icon"><i class="material-icons">lock_open</i></div>
+                    <div class="kd-buttonWithIcon__label">ログイン</div>
+                  </div></a></div>
+            </div>
+            <div class="kd-sp-menu-list__item">
+              <div class="kd-sp-menu-language-list">
+                <div class="kd-sp-menu-language-list__item"><a class="kd-sp-meu-list__link" href="/">
+                    <div class="kd-sp-menu-language"><img class="kd-sp-menu-language__icon" src="img/icon/icon-jp.svg" alt="日本語"/>
+                      <div class="kd-sp-menu-language__label">日本語</div>
+                    </div></a></div>
+                <div class="kd-sp-menu-language-list__item"><a class="kd-sp-meu-list__link" href="/">
+                    <div class="kd-sp-menu-language"><img class="kd-sp-menu-language__icon" src="img/icon/icon-en.svg" alt="English"/>
+                      <div class="kd-sp-menu-language__label">English</div>
+                    </div></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="kd-sp-menu__list">
+          <div class="kd-sp-menu-list">
+            <div class="kd-sp-menu-list__item kd-sp-menu-list__item--is-active"><a class="kd-sp-meu-list__link" href="/">KidsDiaryについて</a></div>
+            <div class="kd-sp-menu-list__item"><a class="kd-sp-meu-list__link" href="/">コラム</a></div>
+            <div class="kd-sp-menu-list__item"><a class="kd-sp-meu-list__link" href="/">よくある質問</a></div>
+            <div class="kd-sp-menu-list__item"><a class="kd-sp-meu-list__link" href="/">保護者向け機能</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(function() {
+        $(".js-menu-close").on("click", function() {
+          $(".js-menu").toggleClass("kd-sp-menu--show");
+        });  
+        $(".js-menu-open").on("click", function() {
+          $(".js-menu").toggleClass("kd-sp-menu--show");
+        });  
+      })
+    </script>
     <div id="section-top">
       <div class="kd-hero">
         <div class="limitter">
@@ -207,7 +283,7 @@
       </script>
     </div>
     <nav class="kd-float-nav js-float-nav">
-      <div class="kd-float-nav__inner"><a class="kd-float-nav__item kd-float-nav__item--is-active js-float-nav__item" id="gnav-top" href="#section-top">トップ</a><a class="kd-float-nav__item js-float-nav__item" id="gnav-function" href="#section-function">機能・出来る事</a><a class="kd-float-nav__item js-float-nav__item" id="gnav-voice" href="#section-voice">利用者の声</a><a class="kd-float-nav__item js-float-nav__item" id="gnav-price" href="#section-price">利用料金</a><a class="kd-float-nav__item js-float-nav__item" id="gnav-support" href="#section-support">サポート</a></div>
+      <div class="kd-float-nav__inner"><a class="kd-float-nav__item kd-float-nav__item--is-active js-float-nav__item" id="gnav-top" href="#section-top">トップ</a><a class="kd-float-nav__item js-float-nav__item" id="gnav-function" href="#section-function"><span>機能・</span>出来る事</a><a class="kd-float-nav__item js-float-nav__item" id="gnav-voice" href="#section-voice">利用者の声</a><a class="kd-float-nav__item js-float-nav__item" id="gnav-price" href="#section-price">利用料金</a><a class="kd-float-nav__item js-float-nav__item" id="gnav-support" href="#section-support">サポート</a></div>
       <div class="kd-float-nav__contact">
         <div class="kd-contact-button"><a class="kd-contact-button__link" href="/">
             <div class="kd-contact-button__inner">
@@ -419,7 +495,7 @@
       </section>
       <section class="kd-section">
         <div class="limitter">
-          <div class="kd-section__head kd-section__head--orange">
+          <div class="kd-section__head kd-section__head--orange kd-section__head--pc">
             <h3 class="kd-section__sub-ttl">KidsDiaryで出来る事</h3>
             <div class="kd-section__border">
               <svg class="border-dotted" x="0px" y="0px" width="300px" height="4" viewBox="0 0 395.9 1">
@@ -921,114 +997,123 @@
                               <div class="kd-button-arrow__icon"><i class="material-icons">open_in_new</i></div></a></div>
                         </div>
                       </div>
+                      <div class="kd-voice-detail__nav">
+                        <div class="kd-voice-detail-nav">
+                          <div class="kd-voice-detail-nav__item js-voice01-scroll-pos-0">保育士さん</div>
+                          <div class="kd-voice-detail-nav__item js-voice01-scroll-pos-312">園長先生</div>
+                          <div class="kd-voice-detail-nav__item js-voice01-scroll-pos-624">保護者の方</div>
+                        </div>
+                      </div>
                       <div class="kd-voice-detail__main">
-                        <div class="kd-voice-list">
-                          <div class="kd-voice-list__item">
-                            <div class="kd-voice-item">
-                              <div class="kd-voice-item__head">
-                                <div class="kd-voice-item__icon"><img class="kd-voice-item__image" src="img/icon/icon-teacher.png"/></div>
-                                <div class="kd-voice-item__name">保育士さん</div>
-                              </div>
-                              <div class="kd-voice-item__ttl">先生と保護者の距離は変わりましたか？</div>
-                              <div class="kd-voice-item__text">忙しい時に、お知らせを伝えられなかったり伝え忘れてしまうことがあったが、<span>アプリのお知らせ機能を使うことによって伝え忘れがなくなり、先生と保護者の信頼関係が強まりました。</span>
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                        <div class="kd-voice-list js-voice01-scroll-wrap">
+                          <div class="kd-voice-list__wrap">
+                            <div class="kd-voice-list__item">
+                              <div class="kd-voice-item">
+                                <div class="kd-voice-item__head">
+                                  <div class="kd-voice-item__icon"><img class="kd-voice-item__image" src="img/icon/icon-teacher.png"/></div>
+                                  <div class="kd-voice-item__name">保育士さん</div>
                                 </div>
-                              </div>
-                              <div class="kd-voice-item__ttl">業務の変化は？</div>
-                              <div class="kd-voice-item__text">一人ひとりにお知らせを書いていましたが、<span>アプリの複数選択によりそれらが一回で済むので時間短縮に繋がり</span>、子供と遊ぶ時間が増えました。
+                                <div class="kd-voice-item__ttl">先生と保護者の距離は変わりましたか？</div>
+                                <div class="kd-voice-item__text">忙しい時に、お知らせを伝えられなかったり伝え忘れてしまうことがあったが、<span>アプリのお知らせ機能を使うことによって伝え忘れがなくなり、先生と保護者の信頼関係が強まりました。</span>
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
+                                </div>
+                                <div class="kd-voice-item__ttl">業務の変化は？</div>
+                                <div class="kd-voice-item__text">一人ひとりにお知らせを書いていましたが、<span>アプリの複数選択によりそれらが一回で済むので時間短縮に繋がり</span>、子供と遊ぶ時間が増えました。
             <br><br>
             アプリには既読機能があるのでイベントのお知らせをした時も、出席の確認などスムーズにすることができました。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="kd-voice-item__ttl">キッズダイアリーおすすめポイントは？</div>
-                              <div class="kd-voice-item__text"><span>健康管理の機能でアレルギーやワクチンがわかる</span>のですぐに確認することができる。<br>
+                                <div class="kd-voice-item__ttl">KidsDiaryおすすめポイントは？</div>
+                                <div class="kd-voice-item__text"><span>健康管理の機能でアレルギーやワクチンがわかる</span>のですぐに確認することができる。<br>
             <span>SIDSの管理を共有</span>できるので、確認忘れを防止することができます。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="kd-voice-list__item">
-                            <div class="kd-voice-item">
-                              <div class="kd-voice-item__head">
-                                <div class="kd-voice-item__icon"><img class="kd-voice-item__image" src="img/icon/icon-principal.png"/></div>
-                                <div class="kd-voice-item__name">園長先生</div>
-                              </div>
-                              <div class="kd-voice-item__ttl">導入のきっかけは？</div>
-                              <div class="kd-voice-item__text">アナログの情報共有や手書きで連絡をしていて時間がかかっていたが、<span>アプリを使用することで情報共有ができる</span>ということを伺い、アプリを導入することに決めました。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                            <div class="kd-voice-list__item">
+                              <div class="kd-voice-item">
+                                <div class="kd-voice-item__head">
+                                  <div class="kd-voice-item__icon"><img class="kd-voice-item__image" src="img/icon/icon-principal.png"/></div>
+                                  <div class="kd-voice-item__name">園長先生</div>
                                 </div>
-                              </div>
-                              <div class="kd-voice-item__ttl">アプリの導入で助かっていることは？</div>
-                              <div class="kd-voice-item__text">先生の連絡帳が、<span>手書きから慣れた入力方法になることで時間が短くなった</span>ことです。
+                                <div class="kd-voice-item__ttl">導入のきっかけは？</div>
+                                <div class="kd-voice-item__text">アナログの情報共有や手書きで連絡をしていて時間がかかっていたが、<span>アプリを使用することで情報共有ができる</span>ということを伺い、アプリを導入することに決めました。
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
+                                </div>
+                                <div class="kd-voice-item__ttl">アプリの導入で助かっていることは？</div>
+                                <div class="kd-voice-item__text">先生の連絡帳が、<span>手書きから慣れた入力方法になることで時間が短くなった</span>ことです。
            <br>
            緊急の時に、アプリのプロフィール画面から<span>保護者の緊急連絡先がすぐに表示される</span>ので迅速に連絡することができるところです。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="kd-voice-item__ttl">アプリ導入後に一番変わったことは？</div>
-                              <div class="kd-voice-item__text">先生たちの出席簿の確認が大変だったが、<span>アプリの出席機能を利用することで複数のクラスを同時に確認することができる</span>というところです。
+                                <div class="kd-voice-item__ttl">アプリ導入後に一番変わったことは？</div>
+                                <div class="kd-voice-item__text">先生たちの出席簿の確認が大変だったが、<span>アプリの出席機能を利用することで複数のクラスを同時に確認することができる</span>というところです。
             <br>
             <br>
             アプリに変わったことで、<span>紙を使わなくなりコスト削減</span>にも繋がっています。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="kd-voice-list__item">
-                            <div class="kd-voice-item">
-                              <div class="kd-voice-item__head">
-                                <div class="kd-voice-item__icon"><img class="kd-voice-item__image" src="img/icon/icon-parents.png"/></div>
-                                <div class="kd-voice-item__name">保護者の方</div>
-                              </div>
-                              <div class="kd-voice-item__ttl">キッズダイアリーを使ってみて</div>
-                              <div class="kd-voice-item__text"><span>アプリの連絡帳が写真付き</span>なので、具体的に保育園で何をしているのかが分かるようになりました。
+                            <div class="kd-voice-list__item">
+                              <div class="kd-voice-item">
+                                <div class="kd-voice-item__head">
+                                  <div class="kd-voice-item__icon"><img class="kd-voice-item__image" src="img/icon/icon-parents.png"/></div>
+                                  <div class="kd-voice-item__name">保護者の方</div>
+                                </div>
+                                <div class="kd-voice-item__ttl">KidsDiaryを使ってみて</div>
+                                <div class="kd-voice-item__text"><span>アプリの連絡帳が写真付き</span>なので、具体的に保育園で何をしているのかが分かるようになりました。
             <br><br>
             アプリの健康機能で睡眠時間とかアレルギーやワクチンの記録などを確認することができます。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="kd-voice-item__ttl">アプリを導入して助かっていることは？</div>
-                              <div class="kd-voice-item__text"><span>朝忙しい時に休みの連絡が簡単にできる</span>ようになり、すごく助かっています。
+                                <div class="kd-voice-item__ttl">アプリを導入して助かっていることは？</div>
+                                <div class="kd-voice-item__text"><span>朝忙しい時に休みの連絡が簡単にできる</span>ようになり、すごく助かっています。
            <br>
            家にいるときだけではなく出先や職場でもお知らせ機能で子供の姿を常に確認することができ安心しています。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="kd-voice-item__ttl">アプリのどんなところが便利？</div>
-                              <div class="kd-voice-item__text">遠くに住んでいるおじいちゃんやおばあちゃんが子供の成長をいつでも見ることができるので、寂しくないのがとても便利。
+                                <div class="kd-voice-item__ttl">アプリのどんなところが便利？</div>
+                                <div class="kd-voice-item__text">遠くに住んでいるおじいちゃんやおばあちゃんが子供の成長をいつでも見ることができるので、寂しくないのがとても便利。
             <br>
             <span>複数の人でアプリを共有できる</span>ので、夫婦で子供の情報を共有することで連携が取りやすくなっています。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1036,6 +1121,21 @@
                         </div>
                       </div>
                     </div>
+                    <script>
+                      $(function() {
+                       var scrollItem = $(".js-voice01-scroll-wrap");
+                        $(".js-voice01-scroll-pos-0").on("click", function () {
+                         console.log("aaaa")
+                         scrollItem.scrollLeft(0);
+                       });
+                        $(".js-voice01-scroll-pos-312").on("click", function () {
+                         scrollItem.scrollLeft(312);
+                       });
+                        $(".js-voice01-scroll-pos-624").on("click", function () {
+                         scrollItem.scrollLeft(612);
+                       });
+                      })
+                    </script>
                     <div class="kd-voice-detail__content">
                       <div class="kd-voice-detail__head">
                         <div class="kd-voice-detail__ttl">クラージュ保育園</div>
@@ -1045,104 +1145,113 @@
                               <div class="kd-button-arrow__icon"><i class="material-icons">open_in_new</i></div></a></div>
                         </div>
                       </div>
+                      <div class="kd-voice-detail__nav">
+                        <div class="kd-voice-detail-nav">
+                          <div class="kd-voice-detail-nav__item js-voice02-scroll-pos-0">保育士さん</div>
+                          <div class="kd-voice-detail-nav__item js-voice02-scroll-pos-312">園長先生</div>
+                          <div class="kd-voice-detail-nav__item js-voice02-scroll-pos-624">保護者の方</div>
+                        </div>
+                      </div>
                       <div class="kd-voice-detail__main">
-                        <div class="kd-voice-list">
-                          <div class="kd-voice-list__item">
-                            <div class="kd-voice-item">
-                              <div class="kd-voice-item__head">
-                                <div class="kd-voice-item__icon"><img class="kd-voice-item__image" src="img/icon/icon-teacher.png"/></div>
-                                <div class="kd-voice-item__name">保育士さん</div>
-                              </div>
-                              <div class="kd-voice-item__ttl">導入前に大変だったことは？</div>
-                              <div class="kd-voice-item__text">園からのお知らせやスケジュールを紙で保護者に伝えていたため、忙しくて確認できていない人がいたり、保護者さんがお便りを見てくれたか分からなかった。
+                        <div class="kd-voice-list js-voice02-scroll-wrap">
+                          <div class="kd-voice-list__wrap">
+                            <div class="kd-voice-list__item">
+                              <div class="kd-voice-item">
+                                <div class="kd-voice-item__head">
+                                  <div class="kd-voice-item__icon"><img class="kd-voice-item__image" src="img/icon/icon-teacher.png"/></div>
+                                  <div class="kd-voice-item__name">保育士さん</div>
+                                </div>
+                                <div class="kd-voice-item__ttl">導入前に大変だったことは？</div>
+                                <div class="kd-voice-item__text">園からのお知らせやスケジュールを紙で保護者に伝えていたため、忙しくて確認できていない人がいたり、保護者さんがお便りを見てくれたか分からなかった。
             <br>
-            <span>園からのお知らせを、キッズダイアリーのお知らせ掲示板から保護者に一斉送信することができ</span>て、どの保護者さんが見たのか一目で見れるのが、とても便利だと感じました。
+            <span>園からのお知らせを、KidsDiaryのお知らせ掲示板から保護者に一斉送信することができ</span>て、どの保護者さんが見たのか一目で見れるのが、とても便利だと感じました。
             
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="kd-voice-item__ttl">導入前に大変だったことは？</div>
-                              <div class="kd-voice-item__text">お知らせをまだ見ていない方には電話をかけてお知らせして、全体に正確に連絡が取れるようになったのは、キッズダイアリーならでは。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                <div class="kd-voice-item__ttl">導入前に大変だったことは？</div>
+                                <div class="kd-voice-item__text">お知らせをまだ見ていない方には電話をかけてお知らせして、全体に正確に連絡が取れるようになったのは、KidsDiaryならでは。
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="kd-voice-item__ttl">導入してよくなったことは？</div>
-                              <div class="kd-voice-item__text"><span>お昼のお食事にアレルギー成分が含まれていると、アレルギーを持っている園児が表示される</span>ため、ミスなく安全に園児達をお預かりすることができている。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                <div class="kd-voice-item__ttl">導入してよくなったことは？</div>
+                                <div class="kd-voice-item__text"><span>お昼のお食事にアレルギー成分が含まれていると、アレルギーを持っている園児が表示される</span>ため、ミスなく安全に園児達をお預かりすることができている。
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="kd-voice-list__item">
-                            <div class="kd-voice-item">
-                              <div class="kd-voice-item__head">
-                                <div class="kd-voice-item__icon"><img class="kd-voice-item__image" src="img/icon/icon-principal.png"/></div>
-                                <div class="kd-voice-item__name">園長先生</div>
-                              </div>
-                              <div class="kd-voice-item__ttl">キッズダイアリー導入前は？</div>
-                              <div class="kd-voice-item__text">キッズダイアリー導入前は資料の作成や、保護者への連絡のし忘れがあって大変でした。
+                            <div class="kd-voice-list__item">
+                              <div class="kd-voice-item">
+                                <div class="kd-voice-item__head">
+                                  <div class="kd-voice-item__icon"><img class="kd-voice-item__image" src="img/icon/icon-principal.png"/></div>
+                                  <div class="kd-voice-item__name">園長先生</div>
+                                </div>
+                                <div class="kd-voice-item__ttl">KidsDiary導入前は？</div>
+                                <div class="kd-voice-item__text">KidsDiary導入前は資料の作成や、保護者への連絡のし忘れがあって大変でした。
             <br>
             導入してからは、<span>連絡ミスがなくなって、時間短縮にもつながりとてもありがたい。</span>
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="kd-voice-item__ttl">キッズダイアリーのいいところは？</div>
-                              <div class="kd-voice-item__text"><span>勤務時間がバラバラでも子供達の様子をタイムリーに知ることができる</span>ため、子供の援助や保護者支援など、チームで保育できるところがとても素晴らしい。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                <div class="kd-voice-item__ttl">KidsDiaryのいいところは？</div>
+                                <div class="kd-voice-item__text"><span>勤務時間がバラバラでも子供達の様子をタイムリーに知ることができる</span>ため、子供の援助や保護者支援など、チームで保育できるところがとても素晴らしい。
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="kd-voice-item__ttl">キッズダイアリーのおすすめポイント</div>
-                              <div class="kd-voice-item__text">保育士と保護者のコミュニケーションを繋げ、園の業務管理を一括にまとめてくれた。
+                                <div class="kd-voice-item__ttl">KidsDiaryのおすすめポイント</div>
+                                <div class="kd-voice-item__text">保育士と保護者のコミュニケーションを繋げ、園の業務管理を一括にまとめてくれた。
             <span>園に合わせて、アプリをカスタマイズできる</span>のも嬉しいです。
             <br>
             ぜひ、他の園にも導入してもらいたい。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="kd-voice-list__item">
-                            <div class="kd-voice-item">
-                              <div class="kd-voice-item__head">
-                                <div class="kd-voice-item__icon"><img class="kd-voice-item__image" src="img/icon/icon-parents.png"/></div>
-                                <div class="kd-voice-item__name">保護者の方</div>
-                              </div>
-                              <div class="kd-voice-item__ttl">どんな機能が便利ですか？</div>
-                              <div class="kd-voice-item__text"><span>遅刻やお休みの連絡は、すごく便利。</span><br>
+                            <div class="kd-voice-list__item">
+                              <div class="kd-voice-item">
+                                <div class="kd-voice-item__head">
+                                  <div class="kd-voice-item__icon"><img class="kd-voice-item__image" src="img/icon/icon-parents.png"/></div>
+                                  <div class="kd-voice-item__name">保護者の方</div>
+                                </div>
+                                <div class="kd-voice-item__ttl">どんな機能が便利ですか？</div>
+                                <div class="kd-voice-item__text"><span>遅刻やお休みの連絡は、すごく便利。</span><br>
 
             保育園にまだ電話ができない朝早い時間帯や、夜遅い時間帯にもアプリからチャット形式で連絡することができて、急いでいるときにとても助かっています。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="kd-voice-item__ttl">どんな機能が便利ですか？</div>
-                              <div class="kd-voice-item__text"><span>今日の献立を確認できる機能</span>があって、献立に急な変更があってもお知らせが届く。
+                                <div class="kd-voice-item__ttl">どんな機能が便利ですか？</div>
+                                <div class="kd-voice-item__text"><span>今日の献立を確認できる機能</span>があって、献立に急な変更があってもお知らせが届く。
             <br>
             それのおかげで、子供が昼に食べたご飯と夕飯のおかずが被らないように、スマホで確認して買い物ができるようになりました。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1150,6 +1259,21 @@
                         </div>
                       </div>
                     </div>
+                    <script>
+                      $(function() {
+                       var scrollItem = $(".js-voice02-scroll-wrap");
+                        $(".js-voice02-scroll-pos-0").on("click", function () {
+                         console.log("aaaa")
+                         scrollItem.scrollLeft(0);
+                       });
+                        $(".js-voice02-scroll-pos-312").on("click", function () {
+                         scrollItem.scrollLeft(312);
+                       });
+                        $(".js-voice02-scroll-pos-624").on("click", function () {
+                         scrollItem.scrollLeft(612);
+                       });
+                      })
+                    </script>
                     <div class="kd-voice-detail__content">
                       <div class="kd-voice-detail__head">
                         <div class="kd-voice-detail__ttl">スーパーキッズ保育園Ritz</div>
@@ -1159,102 +1283,111 @@
                               <div class="kd-button-arrow__icon"><i class="material-icons">open_in_new</i></div></a></div>
                         </div>
                       </div>
+                      <div class="kd-voice-detail__nav">
+                        <div class="kd-voice-detail-nav">
+                          <div class="kd-voice-detail-nav__item js-voice03-scroll-pos-0">保育士さん</div>
+                          <div class="kd-voice-detail-nav__item js-voice03-scroll-pos-312">園長先生</div>
+                          <div class="kd-voice-detail-nav__item js-voice03-scroll-pos-624">保護者の方</div>
+                        </div>
+                      </div>
                       <div class="kd-voice-detail__main">
-                        <div class="kd-voice-list">
-                          <div class="kd-voice-list__item">
-                            <div class="kd-voice-item">
-                              <div class="kd-voice-item__head">
-                                <div class="kd-voice-item__icon"><img class="kd-voice-item__image" src="img/icon/icon-teacher.png"/></div>
-                                <div class="kd-voice-item__name">保育士さん</div>
-                              </div>
-                              <div class="kd-voice-item__ttl">キッズダイアリーの便利な機能はなんですか？</div>
-                              <div class="kd-voice-item__text"><span>健康管理の機能</span>に助けられています。
+                        <div class="kd-voice-list js-voice03-scroll-wrap">
+                          <div class="kd-voice-list__wrap">
+                            <div class="kd-voice-list__item">
+                              <div class="kd-voice-item">
+                                <div class="kd-voice-item__head">
+                                  <div class="kd-voice-item__icon"><img class="kd-voice-item__image" src="img/icon/icon-teacher.png"/></div>
+                                  <div class="kd-voice-item__name">保育士さん</div>
+                                </div>
+                                <div class="kd-voice-item__ttl">KidsDiaryの便利な機能はなんですか？</div>
+                                <div class="kd-voice-item__text"><span>健康管理の機能</span>に助けられています。
             <br>
             予防接種やワクチンの情報を、今までは紙に記載してもらっていたが、アプリを使うとすぐに情報を確認できる上に、<span>保護者の方にも都度連絡をしなくてもいい</span>のでとても便利。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="kd-voice-item__ttl">アプリを使う前と比べて改善されたことは？</div>
-                              <div class="kd-voice-item__text"><span>連絡帳を使うことによって、いつでもどこでも保護者の方とやりとりが可能</span>になったことです。
+                                <div class="kd-voice-item__ttl">アプリを使う前と比べて改善されたことは？</div>
+                                <div class="kd-voice-item__text"><span>連絡帳を使うことによって、いつでもどこでも保護者の方とやりとりが可能</span>になったことです。
             <br>
             連絡帳を使うことによって、園児の怪我の情報などの手書きの入力がなくなり、瞬時に一括確認ができるので大変便利。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="kd-voice-item__ttl">保護者との距離</div>
-                              <div class="kd-voice-item__text">今までは口頭で伝えていた為、忙しいと伝え忘れてしまう。<br><span>アプリのお知らせ機能</span>により伝え忘れが無くなり、保護者との信頼感がアップ。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                <div class="kd-voice-item__ttl">保護者との距離</div>
+                                <div class="kd-voice-item__text">今までは口頭で伝えていた為、忙しいと伝え忘れてしまう。<br><span>アプリのお知らせ機能</span>により伝え忘れが無くなり、保護者との信頼感がアップ。
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="kd-voice-list__item">
-                            <div class="kd-voice-item">
-                              <div class="kd-voice-item__head">
-                                <div class="kd-voice-item__icon"><img class="kd-voice-item__image" src="img/icon/icon-principal.png"/></div>
-                                <div class="kd-voice-item__name">園長先生</div>
-                              </div>
-                              <div class="kd-voice-item__ttl">キッズダイアリーの便利な機能はなんですか？</div>
-                              <div class="kd-voice-item__text"><span>送迎バスがリアルタイムで位置情報や待ち時間を見ることができ</span>て、保護者側も園側も、外で待つ時間を気にしなくて住むところがいいなと思っています。
+                            <div class="kd-voice-list__item">
+                              <div class="kd-voice-item">
+                                <div class="kd-voice-item__head">
+                                  <div class="kd-voice-item__icon"><img class="kd-voice-item__image" src="img/icon/icon-principal.png"/></div>
+                                  <div class="kd-voice-item__name">園長先生</div>
+                                </div>
+                                <div class="kd-voice-item__ttl">KidsDiaryの便利な機能はなんですか？</div>
+                                <div class="kd-voice-item__text"><span>送迎バスがリアルタイムで位置情報や待ち時間を見ることができ</span>て、保護者側も園側も、外で待つ時間を気にしなくて住むところがいいなと思っています。
             <br>
             突然の災害や緊急時のトラブルにすぐに対応できるところが素晴らしいです。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="kd-voice-item__ttl">アプリを使う前と比べて改善されたことは？</div>
-                              <div class="kd-voice-item__text"><span>保育士たちが一番困っている書類関係</span>。勤怠管理やいろんな書類を一括で管理できたり、アウトプットが楽で便利に使わせて頂いています。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                <div class="kd-voice-item__ttl">アプリを使う前と比べて改善されたことは？</div>
+                                <div class="kd-voice-item__text"><span>保育士たちが一番困っている書類関係</span>。勤怠管理やいろんな書類を一括で管理できたり、アウトプットが楽で便利に使わせて頂いています。
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="kd-voice-item__ttl">キッズダイアリーの印象は？</div>
-                              <div class="kd-voice-item__text"><span>保護者もリアルタイムに園の活動が見れて</span>、お互いにとてもいいアプリだなと感じています。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                <div class="kd-voice-item__ttl">KidsDiaryの印象は？</div>
+                                <div class="kd-voice-item__text"><span>保護者もリアルタイムに園の活動が見れて</span>、お互いにとてもいいアプリだなと感じています。
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="kd-voice-list__item">
-                            <div class="kd-voice-item">
-                              <div class="kd-voice-item__head">
-                                <div class="kd-voice-item__icon"><img class="kd-voice-item__image" src="img/icon/icon-parents.png"/></div>
-                                <div class="kd-voice-item__name">保護者の方</div>
-                              </div>
-                              <div class="kd-voice-item__ttl">導入する前に大変だったことは？</div>
-                              <div class="kd-voice-item__text"><span>朝の忙しい時間に電話でお休みの連絡を入れなければならなくて大変だと感じていました。</span>
+                            <div class="kd-voice-list__item">
+                              <div class="kd-voice-item">
+                                <div class="kd-voice-item__head">
+                                  <div class="kd-voice-item__icon"><img class="kd-voice-item__image" src="img/icon/icon-parents.png"/></div>
+                                  <div class="kd-voice-item__name">保護者の方</div>
+                                </div>
+                                <div class="kd-voice-item__ttl">導入する前に大変だったことは？</div>
+                                <div class="kd-voice-item__text"><span>朝の忙しい時間に電話でお休みの連絡を入れなければならなくて大変だと感じていました。</span>
             <br>
             お知らせのプリントを子供をから受け取り忘れてしまったり、プリント自体のもらい忘れがあったりして不便に思っていました。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="kd-voice-item__ttl">どんなときにキッズダイアリーが便利だと感じますか？</div>
-                              <div class="kd-voice-item__text">キッズダイアリーなら<span>お休みの連絡もカレンダーから事前に伝えられて</span>、効率もいいし、すごく助かっています。
+                                <div class="kd-voice-item__ttl">どんなときにKidsDiaryが便利だと感じますか？</div>
+                                <div class="kd-voice-item__text">KidsDiaryなら<span>お休みの連絡もカレンダーから事前に伝えられて</span>、効率もいいし、すごく助かっています。
             <br>
             <span>お知らせもアプリを開くだけですぐに確認できる</span>ので、気軽にいつでもチェックできるし、見落としがなく安心に思える。
-                                <div class="kd-voice-item__border">
-                                  <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                                    <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                                  </svg>
+                                  <div class="kd-voice-item__border">
+                                    <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                                      <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                                    </svg>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1262,6 +1395,21 @@
                         </div>
                       </div>
                     </div>
+                    <script>
+                      $(function() {
+                       var scrollItem = $(".js-voice03-scroll-wrap");
+                        $(".js-voice03-scroll-pos-0").on("click", function () {
+                         console.log("aaaa")
+                         scrollItem.scrollLeft(0);
+                       });
+                        $(".js-voice03-scroll-pos-312").on("click", function () {
+                         scrollItem.scrollLeft(312);
+                       });
+                        $(".js-voice03-scroll-pos-624").on("click", function () {
+                         scrollItem.scrollLeft(612);
+                       });
+                      })
+                    </script>
                   </div>
                 </div>
               </div>
@@ -1427,617 +1575,627 @@
                 </svg>
               </div>
             </div>
+            <div class="kd-functions__nav kd-functions__nav--sp">
+              <div class="kd-functions-nav">
+                <div class="kd-functions-nav__item kd-functions-nav__item--orange js-scroll-pos-0">事務作業を効率化</div>
+                <div class="kd-functions-nav__item kd-functions-nav__item--blue js-scroll-pos-312">ペーパーレス</div>
+                <div class="kd-functions-nav__item kd-functions-nav__item--green js-scroll-pos-624">安全・健康の見える化</div>
+                <div class="kd-functions-nav__item kd-functions-nav__item--purple js-scroll-pos-936">その他</div>
+              </div>
+            </div>
             <div class="kd-section__main">
               <div class="kd-functions">
-                <div class="kd-functions__item">
-                  <div class="kd-functions-list kd-functions-list--orange">
-                    <div class="kd-functions-list__head">
-                      <div class="kd-functions-list__ttl">事務作業を効率化</div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">連絡帳一括作成</div>
+                <div class="kd-functions__wrap js-scroll-wrap">
+                  <div class="kd-functions__item js-fc-scroll-item">
+                    <div class="kd-functions-list kd-functions-list--orange">
+                      <div class="kd-functions-list__head">
+                        <div class="kd-functions-list__ttl">事務作業を効率化</div>
+                      </div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">連絡帳一括作成</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">遅刻・休み連絡</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">遅刻・休み連絡</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">個別お知らせ</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">個別お知らせ</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">請求関連自動集計・発行</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">請求関連自動集計・発行</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">健康管理</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">健康管理</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">SIDS管理</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">SIDS管理</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">クラスグループ管理</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">クラスグループ管理</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">お知らせ定型文</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">お知らせ定型文</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">連絡帳オプション</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">連絡帳オプション</div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="kd-functions__item">
-                  <div class="kd-functions-list kd-functions-list--blue">
-                    <div class="kd-functions-list__head">
-                      <div class="kd-functions-list__ttl">ペーパーレス化</div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">各帳票作成</div>
+                  <div class="kd-functions__item">
+                    <div class="kd-functions-list kd-functions-list--blue">
+                      <div class="kd-functions-list__head">
+                        <div class="kd-functions-list__ttl">ペーパーレス化</div>
+                      </div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">各帳票作成</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">園・クラスだより</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">園・クラスだより</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">献立表作成・自動計算</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">献立表作成・自動計算</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">シフト作成</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">シフト作成</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">入退室管理</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">入退室管理</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">アンケート機能</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">アンケート機能</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">延長保育予約申請</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">延長保育予約申請</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">生徒・職員情報管理</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">生徒・職員情報管理</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">検食記入機能</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">検食記入機能</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">園児調査票管理</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">園児調査票管理</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">アレルギー管理</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">アレルギー管理</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">行事共有</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">行事共有</div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="kd-functions__item">
-                  <div class="kd-functions-list kd-functions-list--green">
-                    <div class="kd-functions-list__head">
-                      <div class="kd-functions-list__ttl">安全・健康の見える化</div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">緊急お知らせ</div>
+                  <div class="kd-functions__item">
+                    <div class="kd-functions-list kd-functions-list--green">
+                      <div class="kd-functions-list__head">
+                        <div class="kd-functions-list__ttl">安全・健康の見える化</div>
+                      </div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">緊急お知らせ</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">地域安全ナビ</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">地域安全ナビ</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">バス運行状況</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">バス運行状況</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">バス接近通知</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">バス接近通知</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">献立アレルギー共有</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">献立アレルギー共有</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">お知らせメール機能</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">お知らせメール機能</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">ワクチン情報共有</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">ワクチン情報共有</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">性格・来室・病歴確認</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">性格・来室・病歴確認</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">緊急お知らせ機能</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">緊急お知らせ機能</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">バス遅延通知</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">バス遅延通知</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">怪我の共有</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">怪我の共有</div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="kd-functions__item">
-                  <div class="kd-functions-list kd-functions-list--purple">
-                    <div class="kd-functions-list__head">
-                      <div class="kd-functions-list__ttl">その他</div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">多言語対応</div>
+                  <div class="kd-functions__item">
+                    <div class="kd-functions-list kd-functions-list--purple">
+                      <div class="kd-functions-list__head">
+                        <div class="kd-functions-list__ttl">その他</div>
+                      </div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">多言語対応</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">アルバム</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">アルバム</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">レッスン予約</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">レッスン予約</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">バス予約</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">バス予約</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">保護者予定表</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">保護者予定表</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">請求管理</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">請求管理</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">保護者一人ひとりのマイフォト</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">保護者一人ひとりのマイフォト</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">翌月の保護者予定表の代行予約</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">翌月の保護者予定表の代行予約</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">生徒・先生複数回入退室</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">生徒・先生複数回入退室</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">お迎え人・お迎え時間確認</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">お迎え人・お迎え時間確認</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">リマインダー機能</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">リマインダー機能</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">履歴機能</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">履歴機能</div>
+                          </div>
+                        </div>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
                         </div>
                       </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="kd-functions-list__item">
-                      <div class="kd-functions-list__label">
-                        <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                          <div class="kd-buttonWithIcon__label">定型文機能</div>
+                      <div class="kd-functions-list__item">
+                        <div class="kd-functions-list__label">
+                          <div class="kd-buttonWIthIcon">
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWithIcon__label">定型文機能</div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="kd-functions-list__border">
-                        <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
-                          <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
-                        </svg>
+                        <div class="kd-functions-list__border">
+                          <svg class="border-dotted-small" x="0px" y="0px" width="600px" height="4" viewBox="0 0 395.9 1">
+                            <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
+                          </svg>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -2046,6 +2204,23 @@
             </div>
           </div>
         </section>
+        <script>
+          $(function() {
+           var scrollItem = $(".js-scroll-wrap");
+            $(".js-scroll-pos-0").on("click", function () {
+             scrollItem.scrollLeft(0);
+           });
+            $(".js-scroll-pos-312").on("click", function () {
+             scrollItem.scrollLeft(312);
+           });
+            $(".js-scroll-pos-624").on("click", function () {
+             scrollItem.scrollLeft(624);
+           });
+            $(".js-scroll-pos-936").on("click", function () {
+             scrollItem.scrollLeft(936);
+           });
+          })
+        </script>
         <section class="kd-section">
           <div class="limitter">
             <div class="kd-section__head kd-section__head--red">
