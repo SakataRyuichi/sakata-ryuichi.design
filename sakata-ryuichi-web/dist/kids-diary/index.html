@@ -16,30 +16,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&amp;display=swap&amp;subset=japanese" rel="stylesheet"/>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script>
-      /*!
-      * @preserve
-      * jquery.scrolldepth.js | v1.0
-      * Copyright (c) 2016 Rob Flaherty (@robflaherty)
-      * Licensed under the MIT and GPL licenses.
-      */
-      !function(e){"function"==typeof define&&define.amd?define(["jquery"],e):"object"==typeof module&&module.exports?module.exports=e(require("jquery")):e(jQuery)}(function(e){"use strict";var n,t,r,o,i={minHeight:0,elements:[],percentage:!0,userTiming:!0,pixelDepth:!0,nonInteraction:!0,gaGlobal:!1,gtmOverride:!1,trackerName:!1,dataLayer:"dataLayer"},a=e(window),l=[],c=!1,u=0;return e.scrollDepth=function(p){function s(e,i,a,l){var c=p.trackerName?p.trackerName+".send":"send";o?(o({event:"ScrollDistance",eventCategory:"Scroll Depth",eventAction:e,eventLabel:i,eventValue:1,eventNonInteraction:p.nonInteraction}),p.pixelDepth&&arguments.length>2&&a>u&&(u=a,o({event:"ScrollDistance",eventCategory:"Scroll Depth",eventAction:"Pixel Depth",eventLabel:d(a),eventValue:1,eventNonInteraction:p.nonInteraction})),p.userTiming&&arguments.length>3&&o({event:"ScrollTiming",eventCategory:"Scroll Depth",eventAction:e,eventLabel:i,eventTiming:l})):(n&&(window[r](c,"event","Scroll Depth",e,i,1,{nonInteraction:p.nonInteraction}),p.pixelDepth&&arguments.length>2&&a>u&&(u=a,window[r](c,"event","Scroll Depth","Pixel Depth",d(a),1,{nonInteraction:p.nonInteraction})),p.userTiming&&arguments.length>3&&window[r](c,"timing","Scroll Depth",e,l,i)),t&&(_gaq.push(["_trackEvent","Scroll Depth",e,i,1,p.nonInteraction]),p.pixelDepth&&arguments.length>2&&a>u&&(u=a,_gaq.push(["_trackEvent","Scroll Depth","Pixel Depth",d(a),1,p.nonInteraction])),p.userTiming&&arguments.length>3&&_gaq.push(["_trackTiming","Scroll Depth",e,l,i,100])))}function h(e){return{"25%":parseInt(.25*e,10),"50%":parseInt(.5*e,10),"75%":parseInt(.75*e,10),"100%":e-5}}function g(n,t,r){e.each(n,function(n,o){-1===e.inArray(n,l)&&t>=o&&(s("Percentage",n,t,r),l.push(n))})}function f(n,t,r){e.each(n,function(n,o){-1===e.inArray(o,l)&&e(o).length&&t>=e(o).offset().top&&(s("Elements",o,t,r),l.push(o))})}function d(e){return(250*Math.floor(e/250)).toString()}function m(){y()}function v(e,n){var t,r,o,i=null,a=0,l=function(){a=new Date,i=null,o=e.apply(t,r)};return function(){var c=new Date;a||(a=c);var u=n-(c-a);return t=this,r=arguments,0>=u?(clearTimeout(i),i=null,a=c,o=e.apply(t,r)):i||(i=setTimeout(l,u)),o}}function y(){c=!0,a.on("scroll.scrollDepth",v(function(){var n=e(document).height(),t=window.innerHeight?window.innerHeight:a.height(),r=a.scrollTop()+t,o=h(n),i=+new Date-D;return l.length>=p.elements.length+(p.percentage?4:0)?(a.off("scroll.scrollDepth"),void(c=!1)):(p.elements&&f(p.elements,r,i),void(p.percentage&&g(o,r,i)))},500))}var D=+new Date;p=e.extend({},i,p),e(document).height()<p.minHeight||(p.gaGlobal?(n=!0,r=p.gaGlobal):"function"==typeof ga?(n=!0,r="ga"):"function"==typeof __gaTracker&&(n=!0,r="__gaTracker"),"undefined"!=typeof _gaq&&"function"==typeof _gaq.push&&(t=!0),"function"==typeof p.eventHandler?o=p.eventHandler:"undefined"==typeof window[p.dataLayer]||"function"!=typeof window[p.dataLayer].push||p.gtmOverride||(o=function(e){window[p.dataLayer].push(e)}),e.scrollDepth.reset=function(){l=[],u=0,a.off("scroll.scrollDepth"),y()},e.scrollDepth.addElements=function(n){"undefined"!=typeof n&&e.isArray(n)&&(e.merge(p.elements,n),c||y())},e.scrollDepth.removeElements=function(n){"undefined"!=typeof n&&e.isArray(n)&&e.each(n,function(n,t){var r=e.inArray(t,p.elements),o=e.inArray(t,l);-1!=r&&p.elements.splice(r,1),-1!=o&&l.splice(o,1)})},m())},e.scrollDepth});
-    </script>
-    <script>
-      jQuery(function() {
-        jQuery.scrollDepth();
-      });
-    </script><!-- Hotjar Tracking Code for https://mars-pets.info/ -->
-    <script>
-      (function(h,o,t,j,a,r){
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:1532202,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
   </head>
   <body>
     <div class="kd-header">
@@ -57,7 +33,7 @@
                         <line class="border-dotted__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
                       </svg>
                     </div></a></div>
-                <div class="kd-gnav__item"><a class="kd-gnav__link" href="/media">コラム
+                <div class="kd-gnav__item"><a class="kd-gnav__link" href="https://www.kidsdiary.jp/media">コラム
                     <div class="kd-gnav__border">
                       <svg class="border-dotted" x="0px" y="0px" width="300px" height="4" viewBox="0 0 395.9 1">
                         <line class="border-dotted__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
@@ -69,7 +45,7 @@
                         <line class="border-dotted__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
                       </svg>
                     </div></a></div>
-                <div class="kd-gnav__item"><a class="kd-gnav__link" href="/">保護者向け機能
+                <div class="kd-gnav__item"><a class="kd-gnav__link" href="https://www.kidsdiary.jp/guardian/">保護者向け機能
                     <div class="kd-gnav__border">
                       <svg class="border-dotted" x="0px" y="0px" width="300px" height="4" viewBox="0 0 395.9 1">
                         <line class="border-dotted__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
@@ -85,44 +61,38 @@
                   <div class="kd-language js-language">
                     <div class="kd-language__label">
                       <div class="kd-buttonWIthIcon">
-                        <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
-                        <div class="kd-buttonWithIcon__label">日本語</div>
+                        <div class="kd-buttonWIthIcon__icon"><i class="material-icons">language</i></div>
+                        <div class="kd-buttonWithIcon__label">言語切り替え</div>
                       </div>
                     </div>
                     <div class="kd-language__icon"><i class="material-icons">arrow_drop_down</i></div>
                     <div class="kd-language__modal js-language-modal">
                       <div class="kd-language-modal">
-                        <div class="kd-language-modal__item">
-                          <div class="kd-language-modal__link"><img class="kd-language-modal__icon" src="img/icon/icon-jp.svg" alt="日本語"/>
-                            <div class="kd-language-modal__label">日本語</div>
-                          </div>
-                        </div>
+                        <div class="kd-language-modal__item"><a class="kd-language-modal__link" href="https://www.kidsdiary.jp/"><img class="kd-language-modal__icon" src="img/icon/icon-jp.svg" alt="日本語"/>
+                            <div class="kd-language-modal__label">日本語</div></a></div>
                         <div class="kd-language-modal__border">
                           <svg class="border-dotted-small" x="0px" y="0px" width="300px" height="4" viewBox="0 0 395.9 1">
                             <line class="border-dotted-small__line" x1="0" y1="0.5" x2="395.9" y2="0.5"></line>
                           </svg>
                         </div>
-                        <div class="kd-language-modal__item">
-                          <div class="kd-language-modal__link"><img class="kd-language-modal__icon" src="img/icon/icon-en.svg" alt="英語"/>
-                            <div class="kd-language-modal__label">English</div>
-                          </div>
-                        </div>
+                        <div class="kd-language-modal__item"><a class="kd-language-modal__link" href="https://www.kidsdiary.jp/en/"><img class="kd-language-modal__icon" src="img/icon/icon-en.svg" alt="英語"/>
+                            <div class="kd-language-modal__label">English</div></a></div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="kd-snav__item kd-snav__item--border"><a class="kd-snav__link" href="/">
-                    <div class="kd-contact-button"><a class="kd-contact-button__link" href="/">
+                <div class="kd-snav__item kd-snav__item--border"><a class="kd-snav__link" href="https://www.kidsdiary.jp/inquiry/">
+                    <div class="kd-contact-button"><a class="kd-contact-button__link" href="https://www.kidsdiary.jp/inquiry/">
                         <div class="kd-contact-button__inner">
                           <div class="kd-buttonWIthIcon">
-                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                            <div class="kd-buttonWIthIcon__icon"><i class="material-icons">email</i></div>
                             <div class="kd-buttonWithIcon__label">メール・電話でお問い合わせ</div>
                           </div>
                         </div></a></div></a></div>
                 <div class="kd-snav__item">
-                  <div class="kd-snav__login"><a class="kd-snav__link" href="/login/" target="_blank">
+                  <div class="kd-snav__login"><a class="kd-snav__link" href="https://kidsdiary.jp/login" target="_blank">
                       <div class="kd-buttonWIthIcon">
-                        <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                        <div class="kd-buttonWIthIcon__icon"><i class="material-icons">lock_open</i></div>
                         <div class="kd-buttonWithIcon__label">ログイン</div>
                       </div></a></div>
                 </div>
@@ -147,7 +117,7 @@
                 <div class="kd-hero-infos">
                   <div class="kd-hero-infos__ttl">
                     <div class="kd-buttonWIthIcon">
-                      <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                      <div class="kd-buttonWIthIcon__icon"><i class="material-icons">house</i></div>
                       <div class="kd-buttonWithIcon__label">対応している施設（全国対応）</div>
                     </div>
                   </div>
@@ -173,10 +143,10 @@
                 </div>
               </div>
               <div class="kd-hero__contact">
-                <div class="kd-contact-button"><a class="kd-contact-button__link" href="/">
+                <div class="kd-contact-button"><a class="kd-contact-button__link" href="https://www.kidsdiary.jp/inquiry/">
                     <div class="kd-contact-button__inner">
                       <div class="kd-buttonWIthIcon">
-                        <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                        <div class="kd-buttonWIthIcon__icon"><i class="material-icons">email</i></div>
                         <div class="kd-buttonWithIcon__label">メール・電話でお問い合わせ</div>
                       </div>
                     </div></a></div>
@@ -186,13 +156,13 @@
               <div class="kd-hero-tab tab">
                 <div class="kd-hero-tab__panel">
                   <div class="kd-hero-tab__content kd-hero-tab__content--is-active">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Gkj65Z6MZUw?autoplay=1&amp;modestbranding=1&amp;rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                    <iframe class="kd-video01" width="560" height="315" src="https://www.youtube.com/embed/Gkj65Z6MZUw?autoplay=1&amp;modestbranding=1&amp;rel=0&amp;enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
                   </div>
                   <div class="kd-hero-tab__content">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/41n92v7OL8s?modestbranding=1&amp;rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                    <iframe class="kd-video02" width="560" height="315" src="https://www.youtube.com/embed/41n92v7OL8s?modestbranding=1&amp;rel=0&amp;enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
                   </div>
                   <div class="kd-hero-tab__content">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RqEBP0r7RdQ?modestbranding=1&amp;rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                    <iframe class="kd-video03" width="560" height="315" src="https://www.youtube.com/embed/RqEBP0r7RdQ?modestbranding=1&amp;rel=0&amp;enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
                   </div>
                 </div>
                 <div class="kd-hero-tab__menu">
@@ -209,6 +179,7 @@
         jQuery(function($){
           $('.kd-hero-tab__item').click(function(){
               // クリックした要素の先祖要素の中で、classの値がgroupの要素を取得
+              videoControl("pauseVideo");
               const group = $(this).parents('.kd-hero-tab'); 
               group.find('.kd-hero-tab__item--is-active').removeClass('kd-hero-tab__item--is-active');
               $(this).addClass('kd-hero-tab__item--is-active');
@@ -217,6 +188,16 @@
               const index = $(this).index();
               // クリックしたタブと同じインデックス番号をもつコンテンツを表示
               group.find(".kd-hero-tab__content").eq(index).addClass('kd-hero-tab__content--is-active');
+              
+          function videoControl(action){ 
+            var $playerWindow1 = $('.kd-video01')[0].contentWindow;
+            $playerWindow1.postMessage('{"event":"command","func":"'+action+'","args":""}', '*');
+            var $playerWindow2 = $('.kd-video02')[0].contentWindow;
+            $playerWindow2.postMessage('{"event":"command","func":"'+action+'","args":""}', '*');
+            var $playerWindow3 = $('.kd-video03')[0].contentWindow;
+            $playerWindow3.postMessage('{"event":"command","func":"'+action+'","args":""}', '*');
+          }
+        
           });
         });
       </script>
@@ -227,7 +208,7 @@
         <div class="kd-contact-button"><a class="kd-contact-button__link" href="/">
             <div class="kd-contact-button__inner">
               <div class="kd-buttonWIthIcon">
-                <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                <div class="kd-buttonWIthIcon__icon"><i class="material-icons">email</i></div>
                 <div class="kd-buttonWithIcon__label">お問い合わせ</div>
               </div>
             </div></a></div>
@@ -916,11 +897,11 @@
                       <div class="kd-voice-nav__name">美園おひさま保育園</div>
                     </div>
                     <div class="kd-voice-nav__item">
-                      <div class="kd-voice-nav__icon"><img class="kd-voice-nav__image" src="img/icon/icon-hoikushi.png"/></div>
+                      <div class="kd-voice-nav__icon"><img class="kd-voice-nav__image" src="img/icon/icon-hoikushi2.png"/></div>
                       <div class="kd-voice-nav__name">クラージュ保育園</div>
                     </div>
                     <div class="kd-voice-nav__item">
-                      <div class="kd-voice-nav__icon"><img class="kd-voice-nav__image" src="img/icon/icon-hoikushi.png"/></div>
+                      <div class="kd-voice-nav__icon"><img class="kd-voice-nav__image" src="img/icon/icon-hoikushi3.png"/></div>
                       <div class="kd-voice-nav__name">スーパーキッズ保育園Ritz</div>
                     </div>
                   </div>
@@ -1100,7 +1081,7 @@
                           <div class="kd-voice-list__item">
                             <div class="kd-voice-item">
                               <div class="kd-voice-item__head">
-                                <div class="kd-voice-item__icon"><img class="kd-voice-item__image" src="img/icon/icon-parents.png"/></div>
+                                <div class="kd-voice-item__icon"><img class="kd-voice-item__image" src="img/icon/icon-principal.png"/></div>
                                 <div class="kd-voice-item__name">園長先生</div>
                               </div>
                               <div class="kd-voice-item__ttl">キッズダイアリー導入前は？</div>
@@ -1303,20 +1284,20 @@
                 </div>
                 <div class="kd-card-list__item">
                   <div class="kd-card">
-                    <div class="kd-card__ttl">保育施設自社開発アプリ導入数NO.1</div><img class="kd-card__image" src="img/image/reason/img-reason04.jpg" alt="保育施設自社開発アプリ導入数NO.1"/>
-                    <div class="kd-card__desc">保育施設の用途や要望に合わせた、独自のカスタマイズが可能。</div>
+                    <div class="kd-card__ttl">丁寧なサポート体制で安心</div><img class="kd-card__image" src="img/image/reason/img-reason04.jpg" alt="丁寧なサポート体制で安心"/>
+                    <div class="kd-card__desc">専用ダイヤルいつでもサポート。<br>お困りの場合、直接お客様の元に伺い対応することも可能です。</div>
                   </div>
                 </div>
                 <div class="kd-card-list__item">
                   <div class="kd-card">
-                    <div class="kd-card__ttl">保育施設自社開発アプリ導入数NO.1</div><img class="kd-card__image" src="img/image/reason/img-reason03.jpg" alt="保育施設自社開発アプリ導入数NO.1"/>
-                    <div class="kd-card__desc">保育施設の用途や要望に合わせた、独自のカスタマイズが可能。</div>
+                    <div class="kd-card__ttl">運用に必要な最適化のご提案</div><img class="kd-card__image" src="img/image/reason/img-reason03.jpg" alt="運用に必要な最適化のご提案"/>
+                    <div class="kd-card__desc">様々な保育施設の予算・環境スタッフた、最適な機能やアドバイスをご提案します。</div>
                   </div>
                 </div>
                 <div class="kd-card-list__item">
                   <div class="kd-card">
-                    <div class="kd-card__ttl">保育施設自社開発アプリ導入数NO.1</div><img class="kd-card__image" src="img/image/reason/img-reason01.jpg" alt="保育施設自社開発アプリ導入数NO.1"/>
-                    <div class="kd-card__desc">保育施設の用途や要望に合わせた、独自のカスタマイズが可能。</div>
+                    <div class="kd-card__ttl">常に無償で新機能のご提供</div><img class="kd-card__image" src="img/image/reason/img-reason01.jpg" alt="常に無償で新機能のご提供"/>
+                    <div class="kd-card__desc">実際のご利用環境を調査し、快適にご利用いただけるように、定期的にサービスのアップデートを行っています。</div>
                   </div>
                 </div>
               </div>
@@ -1414,10 +1395,10 @@
                           <div class="kd-contact">
                             <div class="kd-contact__text">まずはお気軽にお問い合わせください。</div>
                             <div class="kd-contact__button">
-                              <div class="kd-contact-button"><a class="kd-contact-button__link" href="/">
+                              <div class="kd-contact-button"><a class="kd-contact-button__link" href="https://www.kidsdiary.jp/inquiry/">
                                   <div class="kd-contact-button__inner">
                                     <div class="kd-buttonWIthIcon">
-                                      <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                                      <div class="kd-buttonWIthIcon__icon"><i class="material-icons">email</i></div>
                                       <div class="kd-buttonWithIcon__label">メール・電話でお問い合わせ</div>
                                     </div>
                                   </div></a></div>
@@ -2123,10 +2104,10 @@
               <div class="kd-contact">
                 <div class="kd-contact__text">まずはお気軽にお問い合わせください。</div>
                 <div class="kd-contact__button">
-                  <div class="kd-contact-button"><a class="kd-contact-button__link" href="/">
+                  <div class="kd-contact-button"><a class="kd-contact-button__link" href="https://www.kidsdiary.jp/inquiry/">
                       <div class="kd-contact-button__inner">
                         <div class="kd-buttonWIthIcon">
-                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                          <div class="kd-buttonWIthIcon__icon"><i class="material-icons">email</i></div>
                           <div class="kd-buttonWithIcon__label">メール・電話でお問い合わせ</div>
                         </div>
                       </div></a></div>
@@ -2288,10 +2269,10 @@
                 <div class="kd-footer-brand__contact">
                   <div class="kd-contact">
                     <div class="kd-contact__button">
-                      <div class="kd-contact-button"><a class="kd-contact-button__link" href="/">
+                      <div class="kd-contact-button"><a class="kd-contact-button__link" href="https://www.kidsdiary.jp/inquiry/">
                           <div class="kd-contact-button__inner">
                             <div class="kd-buttonWIthIcon">
-                              <div class="kd-buttonWIthIcon__icon"><i class="material-icons">face</i></div>
+                              <div class="kd-buttonWIthIcon__icon"><i class="material-icons">email</i></div>
                               <div class="kd-buttonWithIcon__label">メール・電話でお問い合わせ</div>
                             </div>
                           </div></a></div>
@@ -2300,8 +2281,8 @@
                 </div>
                 <div class="kd-footer-brand__bnrs">
                   <ul class="kd-bnr-list">
-                    <li class="kd-bnr-list__item"><a class="kd-bnr-list__link" href="/"><img class="kd-bnr-list__image" src="img/bnr/cp_banner.png" alt="30,000円プレゼントキャンペーン実施中"/></a></li>
-                    <li class="kd-bnr-list__item"><a class="kd-bnr-list__link" href="/"><img class="kd-bnr-list__image" src="img/bnr/180709_lgwan.jpg" alt="自治体の皆さまへ"/></a></li>
+                    <li class="kd-bnr-list__item"><a class="kd-bnr-list__link" href="https://www.kidsdiary.jp/c_osk_201908/"><img class="kd-bnr-list__image" src="img/bnr/cp_banner.png" alt="30,000円プレゼントキャンペーン実施中"/></a></li>
+                    <li class="kd-bnr-list__item"><a class="kd-bnr-list__link" href="https://www.kidsdiary.jp/lgwan/"><img class="kd-bnr-list__image" src="img/bnr/180709_lgwan.jpg" alt="自治体の皆さまへ"/></a></li>
                     <li class="kd-bnr-list__item"><a class="kd-bnr-list__link" href="/"><img class="kd-bnr-list__image" src="img/bnr/180709_it_bnr.jpg" alt="IT導入補助金"/></a></li>
                   </ul>
                 </div>
@@ -2318,41 +2299,41 @@
             <div class="kd-footer__link">
               <div class="kd-footer__link-list">
                 <ul class="kd-footer-list">
-                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="/">KidsDiaryについて</a></li>
-                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="/media">コラム</a></li>
-                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="https://tayori.com/faq/6c7762a21690c7aee8aea05dd59269abd77bac58">よくある質問</a></li>
+                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="https://www.kidsdiary.jp/#section-features">機能</a></li>
+                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="https://www.kidsdiary.jp/#section-price">利用料金</a></li>
+                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="hhttps://www.kidsdiary.jp/media">コラム</a></li>
                 </ul>
               </div>
               <div class="kd-footer__link-list">
                 <ul class="kd-footer-list">
-                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="/">ICT補助金・助成金</a></li>
-                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="#section-notice">お知らせ</a></li>
+                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="https://www.kidsdiary.jp/subsidy/">ICT補助金・助成金</a></li>
+                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="https://www.kidsdiary.jp/#section-notice">お知らせ</a></li>
                   <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="https://tayori.com/faq/6c7762a21690c7aee8aea05dd59269abd77bac58" target="_blank">よくある質問</a></li>
-                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="/">マニュアル</a></li>
-                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="/">お問い合わせ</a></li>
+                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="https://sites.google.com/kidsdiary.jp/manual/">マニュアル</a></li>
+                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="https://www.kidsdiary.jp/inquiry/">お問い合わせ</a></li>
                 </ul>
               </div>
               <div class="kd-footer__link-list">
                 <ul class="kd-footer-list">
-                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="/">KidsDiaryとは</a></li>
-                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="/">運営会社</a></li>
-                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="/">メンバー</a></li>
-                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="/">代理店募集</a></li>
+                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="https://www.kidsdiary.jp/about/">KidsDiaryとは</a></li>
+                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="https://www.kidsdiary.jp/company/">運営会社</a></li>
+                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="https://www.kidsdiary.jp/company/#member">メンバー</a></li>
+                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="https://www.kidsdiary.jp/inquiry/">代理店募集</a></li>
                 </ul>
               </div>
               <div class="kd-footer__link-list">
                 <ul class="kd-footer-list">
-                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="/">プライバシーポリシー</a></li>
-                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="/">利用規約</a></li>
+                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="https://www.kidsdiary.jp/policy/">プライバシーポリシー</a></li>
+                  <li class="kd-footer-list__item"><a class="kd-footer-list__link" href="https://www.kidsdiary.jp/tos/">利用規約</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="kd-footer__content">
             <div class="kd-footer-badges">
-              <div class="kd-footer-badges__item"><a class="kd-footer-badges__link" href="/"><img class="kd-footer-badges__image" src="img/badge/apple-store-badge.svg" alt="App Store"/></a></div>
-              <div class="kd-footer-badges__item"><a class="kd-footer-badges__link" href="/"><img class="kd-footer-badges__image" src="img/badge/google-play-badge.svg" alt="Google Play"/></a></div>
-              <div class="kd-footer-badges__item"><a class="kd-footer-badges__link" href="/"><img class="kd-footer-badges__image" src="img/badge/apple-store-badge.svg" alt="App Store"/></a></div>
+              <div class="kd-footer-badges__item"><a class="kd-footer-badges__link" href="https://itunes.apple.com/us/app/kidsdiary-bao-yu-yuanto-bao/id1131136948?l=ja&amp;ls=1&amp;mt=8" target="_blank"><img class="kd-footer-badges__image" src="img/badge/apple-store-badge.svg" alt="App Store"/></a></div>
+              <div class="kd-footer-badges__item"><a class="kd-footer-badges__link" href="https://play.google.com/store/apps/details?id=jp.kidsdiary.android" target="_blank"><img class="kd-footer-badges__image" src="img/badge/google-play-badge.svg" alt="Google Play"/></a></div>
+              <div class="kd-footer-badges__item"><a class="kd-footer-badges__link" href="https://kidsdiary.jp/login" target="_blank"><img class="kd-footer-badges__image" src="img/badge/apple-store-badge.svg" alt="App Store"/></a></div>
             </div>
           </div>
           <div class="kd-footer__content">
