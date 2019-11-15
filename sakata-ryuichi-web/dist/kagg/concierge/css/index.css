@@ -168,73 +168,6 @@ p.pagetop a:after {
   padding: 0 15px;
 }
 
-.select-box {
-  width: 100%;
-}
-.select-box .select-box_title {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #213767;
-}
-.select-box .select-box_inner {
-  display: flex;
-  flex-direction: row;
-}
-.select-box .select-box_inner > div {
-  margin-right: 12px;
-}
-.select-box .select-box_inner .select-data {
-  width: 40%;
-}
-.select-box .select-box_inner .select-time {
-  width: 60%;
-}
-.select-box .select-box_inner .select-data .input_type {
-  margin-top: 0px;
-}
-.select-box .select-box_inner > div:last-child {
-  margin-right: 0;
-}
-.select-box .select-box_inner .select-time {
-  border-radius: 10px;
-  position: relative;
-  color: #213767;
-  border: 2px solid;
-  background: #ffffff;
-}
-.select-box .select-box_inner .select-time select {
-  padding: 13px 50px 12px 20px;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: bold;
-  width: 100%;
-  color: #213767;
-}
-.select-box .select-box_inner .select-time::before {
-  position: absolute;
-	top: 0;
-  right: 16px;
-  bottom: 0;
-  margin: auto;
-	width: 0;
-	height: 0;
-	padding: 0;
-	content: '';
-	border-left: 6px solid transparent;
-	border-right: 6px solid transparent;
-	border-top: 6px solid #213767;
-	pointer-events: none;
-}
-
-.notice {
-  margin: 20px 0 0;
-}
-.notice .caution {
-  font-size: 13px;
-  color: #767676;
-  font-weight: 600;
-}
 /* ===================================================================
     main_img
 =================================================================== */
@@ -657,6 +590,11 @@ p.pagetop a:after {
   -webkit-appearance:none;
   outline: none;
   margin-top: 20px;
+  font-weight: bold;
+}
+
+.request .input_type::placeholder {
+  color: #7783a1;
 }
 .request .request_item .deadline {
   width: 47%;
@@ -693,12 +631,96 @@ p.pagetop a:after {
   border-radius: 50px;
   text-decoration: none;
 }
-.request .button + .note {
-  font-size: 13px;
+
+
+.select-box {
+  width: 100%;
+}
+.select-box .select-box_title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #213767;
+}
+.select-box .select-box_inner {
+  display: flex;
+  flex-direction: row;
+}
+.select-box .select-box_inner > div {
+  margin-right: 12px;
+}
+.select-box .select-box_inner .select-data {
+  width: 40%;
+}
+.select-box .select-box_inner .select-time {
+  width: 60%;
+}
+.select-box .select-box_inner .select-data .input_type {
+  margin-top: 0px;
+}
+.select-box .select-box_inner > div:last-child {
+  margin-right: 0;
+}
+.select-box .select-box_inner .select-time {
+  border-radius: 10px;
+  position: relative;
+  color: #213767;
+  border: 2px solid;
+  background: #ffffff;
+}
+.select-box .select-box_inner .select-time select {
+  padding: 13px 50px 12px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  color: #213767;
+}
+.select-box .select-box_inner .select-time::before {
+  position: absolute;
+	top: 0;
+  right: 16px;
+  bottom: 0;
+  margin: auto;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #213767;
+	pointer-events: none;
+}
+
+.notice {
+  margin: 20px 0 0;
+}
+.notice .caution {
+  font-size: 14px;
+  color: #767676;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.note {
+  color: #213767;
+  display: block;
+  margin: 20px auto 30px;
+  max-width: 480px;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: 2px;
   text-align: center;
+  background: #DEEAF4;
+  border-radius: 10px;
 }
+.note br {
+  display: none;
+}
+
+
 
 /* ===================================================================
     bottom_area

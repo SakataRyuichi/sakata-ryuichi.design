@@ -244,7 +244,7 @@
                   <div class="question">
                     <p><span class="num">02.</span>納期の希望をお知らせください</p>
                   </div>
-                  <div class="answer">
+                  <div class="answer no-margin">
                     <p class="deadline"><input type="text" class="input_type datepicker" placeholder="日付を入力"></p>
                   </div>
                   <div class="notice">
@@ -255,7 +255,7 @@
                   <div class="question">
                     <p><span class="num">03.</span>ご予算をお教えください</p>
                   </div>
-                  <div class="answer">
+                  <div class="answer no-margin">
                     <p class="decidedss"><input type="number" class="input_type" id="decidedss" placeholder="予算を入力"><span class="unit">万円以内</span></p>
                   </div>
                 </li>
@@ -264,8 +264,8 @@
                     <p><span class="num">04.</span>寸法入りの図面はありますか?</p>
                   </div>
                   <div class="answer">
-                    <label class="radio" for="radio_04_1"><input type="radio" name="radio_04" id="radio_04_1" >希望しない</label>
-                    <label class="radio" for="radio_04_2"><input type="radio" name="radio_04" id="radio_04_2" >希望する<br class="sp_message"><span class="small">（1枚3万円[税別]）</span></label>
+                    <label class="radio" for="radio_04_1"><input type="radio" name="radio_04" id="radio_04_1" >あり</label>
+                    <label class="radio" for="radio_04_2"><input type="radio" name="radio_04" id="radio_04_2" >なし</label>
                   </div>
                 </li>
                 <li class="request_item">
@@ -337,10 +337,10 @@
                   </div>
                 </li>
               </ol>
+              <p class="note">次のページで<br>図面PDFをアップロードください</p>
               <div class="button">
                 <a data-target="#modal-error-validate" data-toggle="modal">依頼を進める</a>
               </div>
-              <p class="note">※次のページで図面PDFをアップロードください</p>
             </form>
           </div>
         </div>
@@ -401,33 +401,34 @@
             <p class="error">入力エラーがあります</p>
             <table class="simple">
               <tr>
-                <th>お好みの雰囲気:</th>
-                <td>お好みの雰囲気を選択してください。</td>
-              </tr>
-              <tr>
-                <th>メーカーの指定:</th>
-                <td>メーカーの指定を選択してください。</td>
-              </tr>
-              <tr>
-                <th>お客様組み立て商品の希望:</th>
-                <td>お客様組み立て商品の希望を選択してください。</td>
-              </tr>
-              <tr>
-                <th>3Dイメージ画像の作成:</th>
-                <td>3Dイメージ画像の作成を選択してください。</td>
-              </tr>
-              <tr>
                 <th>納期の希望:</th>
-                <td>納期の希望を選択してください。</td>
+                <td>期限を入力してください。</td>
+              </tr>
+              <tr>
+                <th>ご予算の希望:</th>
+                <td>ご予算を入力してください。</td>
+              </tr>
+              <tr>
+                <th>寸法入りの図面:</th>
+                <td>選択してください。</td>
+              </tr>
+              <tr>
+                <th>ご希望の打ち合わせ方法:</th>
+                <td>選択してください。</td>
               </tr>
               <tr>
                 <th>ご利用の目的:</th>
                 <td>ご利用の目的を選択してください。</td>
               </tr>
               <tr>
-                <th>ご予算の希望:</th>
-                <td>予算を入力してください。</td>
+                <th>打ち合わせのご希望日時:</th>
+                <td>第１希望の日付を入力してください。</td>
               </tr>
+              <tr>
+                <th>その他ご希望:</th>
+                <td>1000文字以下でご入力ください。</td>
+              </tr>
+
             </table>
           </div>
           <div class="modal-footer">

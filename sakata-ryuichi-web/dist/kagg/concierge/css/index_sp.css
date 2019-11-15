@@ -290,6 +290,9 @@ p.pagetop a {
 .request .request_item .answer {
   margin-top: -25px;
 }
+.request .request_item .answer.no-margin {
+  margin-top: 0px;
+}
 .request .request_item:first-child .answer {
   margin-top: -25px;
 }
@@ -365,9 +368,19 @@ p.pagetop a {
   padding: 18px 0;
   border-radius: 40px;
 }
-.request .button + .note {
-  font-size: 12px;
-  letter-spacing: 1px;
+
+.note {
+  font-size: 14px;
+  text-align: left;
+  padding: 14px 20px;
+  line-height: 1.3;
+}
+
+.note br {
+  display: block;
+}
+.request .request_item .answer label.select {
+  width: 100%;
 }
 
 /* ===================================================================
