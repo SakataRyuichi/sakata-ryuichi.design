@@ -562,7 +562,7 @@ p.pagetop a:after {
   color: #fff;
   background-color: #213767;
 }
-.request .request_item .answer label.select {
+.request .request_item .answer .select {
   width: 47%;
   justify-content: space-between;
 }
@@ -646,37 +646,36 @@ p.pagetop a:after {
   display: flex;
   flex-direction: row;
 }
-.select-box .select-box_inner > div {
+
+.select-box .select-box_inner label.select-data {
+  width: 40%;
   margin-right: 12px;
 }
-.select-box .select-box_inner .select-data {
-  width: 40%;
-}
-.select-box .select-box_inner .select-time {
+.select-box .select-box_inner label.select-time {
   width: 60%;
 }
-.select-box .select-box_inner .select-data .input_type {
+.select-box .select-box_inner label.select-data .input_type {
   margin-top: 0px;
 }
 .select-box .select-box_inner > div:last-child {
   margin-right: 0;
 }
-.select-box .select-box_inner .select-time {
+.select-box .select-box_inner label.select-time {
   border-radius: 10px;
   position: relative;
   color: #213767;
   border: 2px solid;
   background: #ffffff;
 }
-.select-box .select-box_inner .select-time select {
-  padding: 13px 50px 12px 20px;
+.select-box .select-box_inner label.select-time select {
+  padding: 13px 40px 12px 16px;
   border-radius: 10px;
   font-size: 16px;
   font-weight: bold;
   width: 100%;
   color: #213767;
 }
-.select-box .select-box_inner .select-time::before {
+.select-box .select-box_inner label.select-time::before {
   position: absolute;
 	top: 0;
   right: 16px;

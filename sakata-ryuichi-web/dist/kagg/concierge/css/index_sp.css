@@ -379,10 +379,21 @@ p.pagetop a {
 .note br {
   display: block;
 }
-.request .request_item .answer label.select {
+.request .request_item .answer .select {
   width: 100%;
 }
-
+.request .request_item .answer .select .select-box{
+  margin-bottom: 25px;
+}
+.request .request_item .answer .select.select-box .select-box_inner .select-data {
+  width: 50%;
+}
+.request .request_item .answer .select .select-box .select-box_inner .select-time {
+  width: 50%;
+}
+.request .request_item .answer .select label{
+  margin-top: 0;
+}
 /* ===================================================================
     bottom_area
 =================================================================== */
