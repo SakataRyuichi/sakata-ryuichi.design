@@ -64,32 +64,6 @@ $(function(){
     }else {
       $(this).parent().removeClass('checked')
     }
-
-    if($(this).attr('name') == 'radio_02') {
-      $('.stick .hidetext').hide()
-
-      if($(this).val() == 'stick') {
-        $('.stick .hidetext').fadeIn();
-      }
-    }else if($(this).attr('name') == 'radio_05') {
-      $('.deadline .hidetext').hide()
-      if($(this).val() == 'deadline') {
-        $('.deadline .hidetext').fadeIn();
-      }
-    }else if($(this).attr('name') == 'radio_06') {
-      $('.other .hidetext').hide()
-      if($(this).val() == 'other') {
-        $('.other .hidetext').fadeIn();
-      }
-    }else if ($(this).attr('name') == 'radio_07') {
-      $('.decidedss').hide()
-      $('.decidedss .hidetext').hide()
-      if($(this).val() == 'decidedss') {
-        $('.decidedss').fadeIn();
-        $('.decidedss .hidetext').fadeIn();
-      }
-    }
-
   });
 })
 
