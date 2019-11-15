@@ -393,7 +393,8 @@ p.pagetop a {
 }
 .request .request_item .answer .select .select-box .select-box_inner label.select-time select {
   padding: 11px 30px 12px 12px;
-}.request .request_item .answer .select label{
+}
+.request .request_item .answer .select label{
   margin-top: 0;
   height: 54px;
 }
