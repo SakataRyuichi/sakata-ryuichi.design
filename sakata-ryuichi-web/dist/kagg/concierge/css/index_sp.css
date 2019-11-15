@@ -393,6 +393,7 @@ p.pagetop a {
 }
 .request .request_item .answer .select label{
   margin-top: 0;
+  height: 54px;
 }
 /* ===================================================================
     bottom_area
