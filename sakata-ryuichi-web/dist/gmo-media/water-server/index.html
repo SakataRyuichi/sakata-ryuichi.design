@@ -59,7 +59,7 @@
           <div class="ws-hero-diagnosis">
             <div class="ws-hero-diagnosis__badge"><img src="img/diagnosis-label.png" alt="3秒で診断"></div>
             <div class="ws-hero-diagnosis__title"><img src="img/diagnosis-title.png" alt="あなたにぴったりなのはコレ！！ウォーターサーバー診断"></div>
-            <div class="ws-hero-diagnosis__button"><a class="ws-button-small" href="#diagnosis01"><img src="img/button-small.png" alt="診断する" loading="lazy"></a></div>
+            <div class="ws-hero-diagnosis__button"><a class="ws-button-small" href="#diagnosis01" onclick="ga('send','event','water-server-hero-nav','click','あなたにぴったりなのはコレ！！ウォーターサーバー診断');"><img src="img/button-small.png" alt="診断する" loading="lazy"></a></div>
           </div>
         </div>
         <div class="ws-hero__image-wrap">
@@ -91,10 +91,10 @@
                 <div class="ws-diagnosis-main q1 q1--active">
                   <div class="ws-diagnosis-main__section-title"><img src="img/diagnosis-section-title01.png" alt="あなたはどっち？"></div>
                   <div class="ws-diagnosis-main__buttons">
-                    <div class="ws-diagnosis-main__button" data-q1-number="1" onclick="q1(1)">
+                    <div class="ws-diagnosis-main__button" data-q1-number="1" onclick="q1(1); ga('send','event','water-server-diagnosis','Q1','料金を気にせず&lt;br&gt;月額費用で使いたい');">
                       <div class="ws-diagnosis-main__label">料金を気にせず<br>月額費用で使いたい</div>
                     </div>
-                    <div class="ws-diagnosis-main__button" data-q1-number="2" onclick="q1(2)">
+                    <div class="ws-diagnosis-main__button" data-q1-number="2" onclick="q1(2); ga('send','event','water-server-diagnosis','Q1','できれば天然水がいい');">
                       <div class="ws-diagnosis-main__label">できれば天然水がいい</div>
                     </div>
                   </div>
@@ -102,10 +102,10 @@
                 <div class="ws-diagnosis-main q2_1">
                   <div class="ws-diagnosis-main__section-title"><img src="img/diagnosis-section-title02_1.png" alt="あなたはどっち？"></div>
                   <div class="ws-diagnosis-main__buttons">
-                    <div class="ws-diagnosis-main__button" data-q2_1-number="1" onclick="q2_1(1)">
+                    <div class="ws-diagnosis-main__button" data-q2_1-number="1" onclick="q2_1(1); ga('send','event','water-server-diagnosis','Q2_1','冷水、温水を使いたい');">
                       <div class="ws-diagnosis-main__label">冷水、温水を使いたい</div>
                     </div>
-                    <div class="ws-diagnosis-main__button" data-q2_1-number="2" onclick="q2_1(2)">
+                    <div class="ws-diagnosis-main__button" data-q2_1-number="2" onclick="q2_1(2); ga('send','event','water-server-diagnosis','Q2_1','安全なお水が飲めればいい');">
                       <div class="ws-diagnosis-main__label">安全なお水が飲めればいい</div>
                     </div>
                   </div>
@@ -113,13 +113,13 @@
                 <div class="ws-diagnosis-main q2_2">
                   <div class="ws-diagnosis-main__section-title"><img src="img/diagnosis-section-title02_2.png" alt="何人暮らしですか？"></div>
                   <div class="ws-diagnosis-main__buttons">
-                    <div class="ws-diagnosis-main__button" data-q2_2-number="1" onclick="q2_2(1)">
+                    <div class="ws-diagnosis-main__button" data-q2_2-number="1" onclick="q2_2(1); ga('send','event','water-server-diagnosis','Q2_2','1~2人暮らし');">
                       <div class="ws-diagnosis-main__label">1~2人暮らし</div>
                     </div>
-                    <div class="ws-diagnosis-main__button" data-q2_2-number="2" onclick="q2_2(2)">
+                    <div class="ws-diagnosis-main__button" data-q2_2-number="2" onclick="q2_2(2); ga('send','event','water-server-diagnosis','Q2_2','3人暮らし');">
                       <div class="ws-diagnosis-main__label">3人暮らし</div>
                     </div>
-                    <div class="ws-diagnosis-main__button" data-q2_2-number="3" onclick="q2_2(3)">
+                    <div class="ws-diagnosis-main__button" data-q2_2-number="3" onclick="q2_2(3); ga('send','event','water-server-diagnosis','Q2_2','4人暮らし以上');">
                       <div class="ws-diagnosis-main__label">4人暮らし以上</div>
                     </div>
                   </div>
@@ -127,23 +127,23 @@
                 <div class="ws-diagnosis-main q3">
                   <div class="ws-diagnosis-main__section-title"><img src="img/diagnosis-section-title03.png" alt="サーバーレンタル料は許容できる？"></div>
                   <div class="ws-diagnosis-main__buttons">
-                    <div class="ws-diagnosis-main__button" data-q3-number="1" onclick="q3(1)">
+                    <div class="ws-diagnosis-main__button" data-q3-number="1" onclick="q3(1); ga('send','event','water-server-diagnosis','Q3','無料');">
                       <div class="ws-diagnosis-main__label">無料</div>
                     </div>
-                    <div class="ws-diagnosis-main__button" data-q3-number="2" onclick="q3(2)">
+                    <div class="ws-diagnosis-main__button" data-q3-number="2" onclick="q3(2); ga('send','event','water-server-diagnosis','Q3','¥550');">
                       <div class="ws-diagnosis-main__label">¥550</div>
                     </div>
-                    <div class="ws-diagnosis-main__button" data-q3-number="3" onclick="q3(3)">
+                    <div class="ws-diagnosis-main__button" data-q3-number="3" onclick="q3(3); ga('send','event','water-server-diagnosis','Q3','¥1,100');">
                       <div class="ws-diagnosis-main__label">¥1,100</div>
                     </div>
-                    <div class="ws-diagnosis-main__button" data-q3-number="4" onclick="q3(4)">
+                    <div class="ws-diagnosis-main__button" data-q3-number="4" onclick="q3(4); ga('send','event','water-server-diagnosis','Q3','¥1,320');">
                       <div class="ws-diagnosis-main__label">¥1,320</div>
                     </div>
                   </div>
                 </div>
                 <div class="ws-diagnosis-products-wrap anser">
                   <div class="ws-diagnosis-main__section-title"><img src="img/diagnosis-section-title04.png" alt="あなたにぴったりなのはコレ！！"></div>
-                  <div class="ws-diagnosis-return-top" onclick="restart()">←はじめに戻る</div>
+                  <div class="ws-diagnosis-return-top" onclick="restart(); ga('send','event','water-server-diagnosis','Anser','はじめに戻る');">←はじめに戻る</div>
                   <div class="ws-diagnosis-main ws-diagnosis-main--anser a1_1">
                     <div class="ws-diagnosis-product">
                       <div class="ws-diagnosis-product__left">
@@ -168,7 +168,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>どれだけお水を飲んでも5000円以内に収まる</li>
                           <li>お湯と冷水がいつでも飲める</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','ナノラピア　マリン',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','ナノラピア　マリン',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -196,7 +196,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>どれだけお水を飲んでも3000円以内に収まる</li>
                           <li>電気代がかからない常温水のみのサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','ナノラピア　メイト',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','ナノラピア　メイト',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -224,7 +224,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>プレミアムウォーターで一番売れているサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','スリムサーバーIII',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','スリムサーバーIII',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -252,7 +252,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>プレミアムウォーターで一番売れているサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','スリムサーバーIII',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','スリムサーバーIII',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -280,7 +280,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>プレミアムウォーターで一番売れているサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','スリムサーバーIII',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','スリムサーバーIII',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -308,7 +308,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>amadanaとコラボされたおしゃれなサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','amadanaスタンダードサーバー',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','amadanaスタンダードサーバー',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -336,7 +336,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>amadanaとコラボされたおしゃれなサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','amadanaスタンダードサーバー',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','amadanaスタンダードサーバー',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -364,7 +364,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>amadanaとコラボされたおしゃれなサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','amadanaスタンダードサーバー',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','amadanaスタンダードサーバー',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -392,7 +392,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>サーバーレンタル料無料</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','siphon',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','siphon',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -420,7 +420,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>サーバーレンタル料無料</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','siphon',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','siphon',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -448,7 +448,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>サーバーレンタル料無料</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','siphon',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','siphon',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -476,7 +476,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>2019/10/01に発売された新サーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','QuOL',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','QuOL',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -504,7 +504,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>2019/10/01に発売された新サーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','QuOL',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','QuOL',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -532,7 +532,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>2019/10/01に発売された新サーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','QuOL',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','QuOL',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -560,7 +560,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>エコで高機能なウォーターサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','cado',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','cado',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -588,7 +588,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>エコで高機能なウォーターサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','cado',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','cado',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -616,7 +616,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>エコで高機能なウォーターサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','cado',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','cado',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -644,7 +644,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>amadanaとコラボされたおしゃれなサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','amadanaウォーターサーバー',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','amadanaウォーターサーバー',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -672,7 +672,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>amadanaとコラボされたおしゃれなサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','amadanaウォーターサーバー',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','amadanaウォーターサーバー',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -700,7 +700,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>amadanaとコラボされたおしゃれなサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','amadanaウォーターサーバー',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','amadanaウォーターサーバー',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -728,7 +728,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>UCCと共同開発されたコーヒメーカー一体型サーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','slatcafe',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','slatcafe',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -756,7 +756,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>UCCと共同開発されたコーヒメーカー一体型サーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','slatcafe',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','slatcafe',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -784,7 +784,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>UCCと共同開発されたコーヒメーカー一体型サーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','slatcafe',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','slatcafe',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -812,7 +812,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>赤ちゃんや子育てにも安心な設計（キッズデザイン賞・GOODDESIGN賞受賞）</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','dewo',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','dewo',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -840,7 +840,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>赤ちゃんや子育てにも安心な設計（キッズデザイン賞・GOODDESIGN賞受賞）</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','dewo',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','dewo',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -868,7 +868,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>赤ちゃんや子育てにも安心な設計（キッズデザイン賞・GOODDESIGN賞受賞）</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','dewo',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','dewo',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -896,7 +896,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>高さはもちろん、横幅、奥行ともに小型な卓上サーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','dewomini',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','dewomini',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -924,7 +924,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>高さはもちろん、横幅、奥行ともに小型な卓上サーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','dewomini',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','dewomini',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -952,7 +952,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>高さはもちろん、横幅、奥行ともに小型な卓上サーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','dewomini',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','dewomini',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -981,10 +981,10 @@
                 <div class="ws-diagnosis-main q1 q1--active">
                   <div class="ws-diagnosis-main__section-title"><img src="img/diagnosis-section-title01.png" alt="あなたはどっち？"></div>
                   <div class="ws-diagnosis-main__buttons">
-                    <div class="ws-diagnosis-main__button" data-q1-number="1" onclick="q1(1)">
+                    <div class="ws-diagnosis-main__button" data-q1-number="1" onclick="q1(1); ga('send','event','water-server-diagnosis','Q1','料金を気にせず&lt;br&gt;月額費用で使いたい');">
                       <div class="ws-diagnosis-main__label">料金を気にせず<br>月額費用で使いたい</div>
                     </div>
-                    <div class="ws-diagnosis-main__button" data-q1-number="2" onclick="q1(2)">
+                    <div class="ws-diagnosis-main__button" data-q1-number="2" onclick="q1(2); ga('send','event','water-server-diagnosis','Q1','できれば天然水がいい');">
                       <div class="ws-diagnosis-main__label">できれば天然水がいい</div>
                     </div>
                   </div>
@@ -992,10 +992,10 @@
                 <div class="ws-diagnosis-main q2_1">
                   <div class="ws-diagnosis-main__section-title"><img src="img/diagnosis-section-title02_1.png" alt="あなたはどっち？"></div>
                   <div class="ws-diagnosis-main__buttons">
-                    <div class="ws-diagnosis-main__button" data-q2_1-number="1" onclick="q2_1(1)">
+                    <div class="ws-diagnosis-main__button" data-q2_1-number="1" onclick="q2_1(1); ga('send','event','water-server-diagnosis','Q2_1','冷水、温水を使いたい');">
                       <div class="ws-diagnosis-main__label">冷水、温水を使いたい</div>
                     </div>
-                    <div class="ws-diagnosis-main__button" data-q2_1-number="2" onclick="q2_1(2)">
+                    <div class="ws-diagnosis-main__button" data-q2_1-number="2" onclick="q2_1(2); ga('send','event','water-server-diagnosis','Q2_1','安全なお水が飲めればいい');">
                       <div class="ws-diagnosis-main__label">安全なお水が飲めればいい</div>
                     </div>
                   </div>
@@ -1003,13 +1003,13 @@
                 <div class="ws-diagnosis-main q2_2">
                   <div class="ws-diagnosis-main__section-title"><img src="img/diagnosis-section-title02_2.png" alt="何人暮らしですか？"></div>
                   <div class="ws-diagnosis-main__buttons">
-                    <div class="ws-diagnosis-main__button" data-q2_2-number="1" onclick="q2_2(1)">
+                    <div class="ws-diagnosis-main__button" data-q2_2-number="1" onclick="q2_2(1); ga('send','event','water-server-diagnosis','Q2_2','1~2人暮らし');">
                       <div class="ws-diagnosis-main__label">1~2人暮らし</div>
                     </div>
-                    <div class="ws-diagnosis-main__button" data-q2_2-number="2" onclick="q2_2(2)">
+                    <div class="ws-diagnosis-main__button" data-q2_2-number="2" onclick="q2_2(2); ga('send','event','water-server-diagnosis','Q2_2','3人暮らし');">
                       <div class="ws-diagnosis-main__label">3人暮らし</div>
                     </div>
-                    <div class="ws-diagnosis-main__button" data-q2_2-number="3" onclick="q2_2(3)">
+                    <div class="ws-diagnosis-main__button" data-q2_2-number="3" onclick="q2_2(3); ga('send','event','water-server-diagnosis','Q2_2','4人暮らし以上');">
                       <div class="ws-diagnosis-main__label">4人暮らし以上</div>
                     </div>
                   </div>
@@ -1017,23 +1017,23 @@
                 <div class="ws-diagnosis-main q3">
                   <div class="ws-diagnosis-main__section-title"><img src="img/diagnosis-section-title03.png" alt="サーバーレンタル料は許容できる？"></div>
                   <div class="ws-diagnosis-main__buttons">
-                    <div class="ws-diagnosis-main__button" data-q3-number="1" onclick="q3(1)">
+                    <div class="ws-diagnosis-main__button" data-q3-number="1" onclick="q3(1); ga('send','event','water-server-diagnosis','Q3','無料');">
                       <div class="ws-diagnosis-main__label">無料</div>
                     </div>
-                    <div class="ws-diagnosis-main__button" data-q3-number="2" onclick="q3(2)">
+                    <div class="ws-diagnosis-main__button" data-q3-number="2" onclick="q3(2); ga('send','event','water-server-diagnosis','Q3','¥550');">
                       <div class="ws-diagnosis-main__label">¥550</div>
                     </div>
-                    <div class="ws-diagnosis-main__button" data-q3-number="3" onclick="q3(3)">
+                    <div class="ws-diagnosis-main__button" data-q3-number="3" onclick="q3(3); ga('send','event','water-server-diagnosis','Q3','¥1,100');">
                       <div class="ws-diagnosis-main__label">¥1,100</div>
                     </div>
-                    <div class="ws-diagnosis-main__button" data-q3-number="4" onclick="q3(4)">
+                    <div class="ws-diagnosis-main__button" data-q3-number="4" onclick="q3(4); ga('send','event','water-server-diagnosis','Q3','¥1,320');">
                       <div class="ws-diagnosis-main__label">¥1,320</div>
                     </div>
                   </div>
                 </div>
                 <div class="ws-diagnosis-products-wrap anser">
                   <div class="ws-diagnosis-main__section-title"><img src="img/diagnosis-section-title04.png" alt="あなたにぴったりなのはコレ！！"></div>
-                  <div class="ws-diagnosis-return-top" onclick="restart()">←はじめに戻る</div>
+                  <div class="ws-diagnosis-return-top" onclick="restart(); ga('send','event','water-server-diagnosis','Anser','はじめに戻る');">←はじめに戻る</div>
                   <div class="ws-diagnosis-main ws-diagnosis-main--anser a1_1">
                     <div class="ws-diagnosis-product">
                       <div class="ws-diagnosis-product__left">
@@ -1058,7 +1058,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>どれだけお水を飲んでも5000円以内に収まる</li>
                           <li>お湯と冷水がいつでも飲める</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','ナノラピア　マリン',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','ナノラピア　マリン',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1086,7 +1086,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>どれだけお水を飲んでも3000円以内に収まる</li>
                           <li>電気代がかからない常温水のみのサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','ナノラピア　メイト',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','ナノラピア　メイト',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1114,7 +1114,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>プレミアムウォーターで一番売れているサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','スリムサーバーIII',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','スリムサーバーIII',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1142,7 +1142,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>プレミアムウォーターで一番売れているサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','スリムサーバーIII',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','スリムサーバーIII',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1170,7 +1170,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>プレミアムウォーターで一番売れているサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','スリムサーバーIII',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','スリムサーバーIII',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1198,7 +1198,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>amadanaとコラボされたおしゃれなサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','amadanaスタンダードサーバー',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','amadanaスタンダードサーバー',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1226,7 +1226,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>amadanaとコラボされたおしゃれなサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','amadanaスタンダードサーバー',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','amadanaスタンダードサーバー',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1254,7 +1254,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>amadanaとコラボされたおしゃれなサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','amadanaスタンダードサーバー',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','amadanaスタンダードサーバー',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1282,7 +1282,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>サーバーレンタル料無料</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','siphon',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','siphon',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1310,7 +1310,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>サーバーレンタル料無料</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','siphon',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','siphon',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1338,7 +1338,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>サーバーレンタル料無料</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','siphon',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','siphon',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1366,7 +1366,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>2019/10/01に発売された新サーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','QuOL',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','QuOL',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1394,7 +1394,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>2019/10/01に発売された新サーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','QuOL',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','QuOL',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1422,7 +1422,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>2019/10/01に発売された新サーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','QuOL',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','QuOL',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1450,7 +1450,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>エコで高機能なウォーターサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','cado',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','cado',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1478,7 +1478,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>エコで高機能なウォーターサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','cado',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','cado',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1506,7 +1506,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>エコで高機能なウォーターサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','cado',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','cado',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1534,7 +1534,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>amadanaとコラボされたおしゃれなサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','amadanaウォーターサーバー',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','amadanaウォーターサーバー',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1562,7 +1562,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>amadanaとコラボされたおしゃれなサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','amadanaウォーターサーバー',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','amadanaウォーターサーバー',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1590,7 +1590,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>味にこだわった「非加熱処理」を採用し水のおいしさを追求</li>
                           <li>amadanaとコラボされたおしゃれなサーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','amadanaウォーターサーバー',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','amadanaウォーターサーバー',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1618,7 +1618,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>UCCと共同開発されたコーヒメーカー一体型サーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','slatcafe',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','slatcafe',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1646,7 +1646,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>UCCと共同開発されたコーヒメーカー一体型サーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','slatcafe',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','slatcafe',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1674,7 +1674,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>UCCと共同開発されたコーヒメーカー一体型サーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','slatcafe',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','slatcafe',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1702,7 +1702,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>赤ちゃんや子育てにも安心な設計（キッズデザイン賞・GOODDESIGN賞受賞）</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','dewo',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','dewo',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1730,7 +1730,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>赤ちゃんや子育てにも安心な設計（キッズデザイン賞・GOODDESIGN賞受賞）</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','dewo',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','dewo',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1758,7 +1758,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>赤ちゃんや子育てにも安心な設計（キッズデザイン賞・GOODDESIGN賞受賞）</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','dewo',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','dewo',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1786,7 +1786,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>高さはもちろん、横幅、奥行ともに小型な卓上サーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','dewomini',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','dewomini',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1814,7 +1814,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>高さはもちろん、横幅、奥行ともに小型な卓上サーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','dewomini',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','dewomini',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
@@ -1842,7 +1842,7 @@
                         <ul class="ws-diagnosis-product__points">
                           <li>静音設計、省エネ、温水循環機能などを採用</li>
                           <li>高さはもちろん、横幅、奥行ともに小型な卓上サーバー</li>
-                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-entry','click','dewomini',1);">お申し込みはこちら</a>
+                        </ul><a class="ws-diagnosis-product__buy-button" href="/" target="_blank" onclick="ga('send','event','water-server-diagnosis','entry'','dewomini',1);">お申し込みはこちら</a>
                       </div>
                     </div>
                   </div>
